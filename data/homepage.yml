@@ -7,7 +7,7 @@ showcase:
   enable: true
   title: "Hello, I’m Akarsh."
   subtitle: "Neophile | Audiophile | Bibliophile"
-  description: "I work at <a target='_blank' href='https://infineon.com/'>Infineon</a>, a semiconductor company."
+  description: "As you might have guessed, the domain name was inspired by Alphabet (Google's parent company) which colloquially represents everything-> A-Z. I created this website in an effort to have a single site with everything relating to me ;)"
   image:
     alt: "Showcase keyboard and mouse image"
     x: "img/showcase/showcase.png"
@@ -61,7 +61,7 @@ about:
     I am in pursuit of becoming a productivity grease-monkey and thus I keep trying various things.
     </p>
     <p class="lead">
-    I work as Strategic Marketing Specialist at Infineon Technologies where my role revolves around providing competitive market intelligence to the business units.
+    I work as Strategic Marketing Specialist at <a target='_blank' href='https://infineon.com/'>Infineon Technologies</a>, a semicondutor company where my role revolves around providing competitive market intelligence to the business units.
     </p>'
   button:
     icon: "icon-smile-fill"
