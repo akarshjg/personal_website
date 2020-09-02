@@ -104,12 +104,24 @@ experience:
 
   items:
     - title: "Strategic Marketing Specialist"
-      company: "<a target='_blank' href='https://www.cypress.com/'>Cypress Semiconductor</a>"
+      company: "Cypress Semiconductor"
       duration: "Apr 2019 - Present"
 
     - title: "Pricing Marketing Engineer"
       company: "Cypress Semiconductor"
       duration: "Jun 2018 - Apr 2019"
+
+    - title: "Pricing Marketing Co-Op"
+      company: "Cypress Semiconductor"
+      duration: "Jan 2018 - May 2018"
+
+    - title: "Research Intern"
+      company: "DESE, Indian Institute of Science"
+      duration: "Jun 2017 - Jul 2017"
+
+    - title: "Intern"
+      company: "Vayavya Labs Pvt. Ltd."
+      duration: "Jun 2016 - Jul 2016"            
 
 
 # Client & Work
