@@ -234,7 +234,7 @@ contact:
   #   number: "+41 (44) 505 10 99"
   email:
     title: "Email"
-    email: '<a href="mailto:akarshjg@gmail.com">akarshg@gmail.com</a>'
+    email: '<a href="mailto:akarshjg@gmail.com">akarshjg@gmail.com</a>'
   address:
     title: "Address"
     address: "HSR Layout<br />Bengaluru, 560-102"
