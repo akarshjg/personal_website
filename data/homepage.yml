@@ -78,14 +78,17 @@ education:
     - university: "R. V. College of Engineering, Bengaluru"
       year: "2014-2018"
       degree: "Bachelor of Engineering (BE), Telecommunication Engineering"
+      website: "https://www.rvce.edu.in//"
 
     - university: "Jain College, VV Puram, Bangalore"
       year: "2012-2014"
       degree: "Pre-University, 10+2"
+      website: "https://www.jaincollege.ac.in/vvpuram/about.php"
 
     - university: "Sainik School, Bijapur"
       year: "2007-2012"
       degree: "High School"
+      website: "https://ssbj.in/"
 
 # experience
 experience:
@@ -103,24 +106,29 @@ experience:
 
   items:
     - title: "Strategic Marketing Specialist"
-      company: "Cypress Semiconductor"
+      company: "Infineon Technologies(Cypress Semiconductor)"
       duration: "Apr 2019 - Present"
+      website: "https://www.infineon.com/"
 
     - title: "Pricing Marketing Engineer"
       company: "Cypress Semiconductor"
       duration: "Jun 2018 - Apr 2019"
+      website: "https://www.cypress.com/"
 
     - title: "Pricing Marketing Co-Op"
       company: "Cypress Semiconductor"
       duration: "Jan 2018 - May 2018"
+      website: "https://www.cypress.com/"
 
     - title: "Research Intern"
       company: "DESE, Indian Institute of Science"
       duration: "Jun 2017 - Jul 2017"
+      website: "https://dese.iisc.ac.in/"
 
     - title: "Intern"
       company: "Vayavya Labs Pvt. Ltd."
       duration: "Jun 2016 - Jul 2016"
+      website: "https://vayavyalabs.com/"
 
 
 # Client & Work
@@ -237,7 +245,7 @@ contact:
     email: '<a href="mailto:akarshjg@gmail.com">akarshjg@gmail.com</a>'
   address:
     title: "Address"
-    address: "HSR Layout<br />Bengaluru, 560-102"
+    address: "Vivek Nagar East<br />Vijayapura, 586-109"
   button:
     icon: "icon-mail-fill"
     btnText: "Send Message"
