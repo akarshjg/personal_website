@@ -7,7 +7,7 @@ showcase:
   enable: true
   title: "Hello, I’m Akarsh."
   subtitle: "Neophile | Audiophile | Bibliophile"
-  description: "As you might have guessed, the domain name was inspired by Alphabet (Google's parent company) which colloquially represents everything-> A-Z. I created this website in an effort to have a single site with everything relating to me ;)"
+  description: "As you might have guessed, the domain name was inspired by Alphabet (GOOGL) which colloquially represents everything-> A-Z. I created this website in an effort to have a single site with everything relating to me ;)"
   image:
     alt: "Showcase keyboard and mouse image"
     x: "img/showcase/showcase.png"
@@ -57,10 +57,10 @@ about:
   enable: true
   title: "Who am I?"
   content: '<p class="lead">
-    When I am not working you can find me reading books, listening to music or binging on Netflix shows. I am in pursuit of becoming a productivity grease-monkey and thus I keep trying various things or in other words I am a dilettante😅.
+    I enjoy reading books, listening to music and binging on Netflix shows whenever I am free. I am in pursuit of becoming a productivity grease-monkey and thus I keep trying various things or in other words I am a dilettante😅.
     </p>
     <p class="lead">
-    I work as Strategic Marketing Specialist at a semicondutor company where my role revolves around providing competitive market intelligence to the business units.
+    I work as Strategic Marketing Specialist at a semiconductor company where my role revolves around providing competitive market intelligence to the business units.
     </p>'
   button:
     icon: "icon-smile-fill"
@@ -94,7 +94,7 @@ education:
 experience:
   enable: true
   title: "Experience"
-  description: "I have over 3 years of experience working with Semiconductor Company in marketing roles. After testing waters with tech, research and marketing roles during the internships, it became evident that i liked the marketing role more than the others and thus I began my professional journey in Marketing "
+  description: "I have over 3 years of experience working at a Semiconductor company in marketing role . After testing waters with technology related roles, technical research role and marketing roles during the internships, I realized that the confluence of applied technology and business resonated with me and thus I began my professional journey in Marketing at a hi-tech company."
   button:
     icon: "icon-linkedin-fill"
     btnText: "Linkedin"
