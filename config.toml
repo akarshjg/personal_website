@@ -69,7 +69,7 @@ theme = "raditian-free-hugo-theme"
     text2 = "galagali"
 
   [params.footer]
-      copyright = "© 2021 | Akarsh Galagali. All rights reserved."
+      copyright = "© 2022 | Akarsh Galagali. All rights reserved."
       # [params.footer.radity_logo]
       #   x = "img/general/design-and-code-radity.png"
       #   _2x = "img/general/design-and-code-radity@2x.png"
