@@ -94,7 +94,7 @@ education:
 experience:
   enable: true
   title: "Experience"
-  description: "I have over 3 years of experience working at a Semiconductor company in marketing role . After testing waters with technology related roles, technical research role and marketing roles during the internships, I realized that the confluence of applied technology and business resonated with me and thus I began my professional journey in Marketing at a hi-tech company."
+  description: "I have over 4 years of experience working at a Semiconductor company in marketing role . After testing waters with technology related roles, technical research role and marketing roles during the internships, I realized that the confluence of applied technology and business resonated with me and thus I began my professional journey in Marketing at a hi-tech company."
   button:
     icon: "icon-linkedin-fill"
     btnText: "Linkedin"
@@ -245,7 +245,7 @@ contact:
     email: '<a href="mailto:akarshjg@gmail.com">akarshjg@gmail.com</a>'
   address:
     title: "Address"
-    address: "Vivek Nagar East<br />Vijayapura, 586-109"
+    address: "Indiranagar<br />Bengaluru, 560-075"
   button:
     icon: "icon-mail-fill"
     btnText: "Send Message"
