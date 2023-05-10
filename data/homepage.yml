@@ -62,6 +62,9 @@ about:
     <p class="lead">
     I work as Strategic Marketing Specialist at a semiconductor company where my role revolves around providing competitive market intelligence to the business units.
     </p>'
+    <p class="lead">
+    You can talk to me about productivity workflows, Data Science, Data Engineering Marketing, Pricing and Strategy. I dabble with Guitar sometimes and I go for runs every now and then.
+    </p>'
   button:
     icon: "icon-smile-fill"
     btnText: "About Me"
@@ -94,7 +97,7 @@ education:
 experience:
   enable: true
   title: "Experience"
-  description: "I have over 4 years of experience working at a Semiconductor company in marketing role . After testing waters with technology related roles, technical research role and marketing roles during the internships, I realized that the confluence of applied technology and business resonated with me and thus I began my professional journey in Marketing at a hi-tech company."
+  description: "I have about five years of experience working at a Semiconductor company in marketing role . After testing waters with technology related roles, technical research role and marketing roles during the internships, I realized that the confluence of applied technology and business resonated with me and thus I began my professional journey in Marketing at a hi-tech company."
   button:
     icon: "icon-linkedin-fill"
     btnText: "Linkedin"
@@ -245,7 +248,7 @@ contact:
     email: '<a href="mailto:akarshjg@gmail.com">akarshjg@gmail.com</a>'
   address:
     title: "Address"
-    address: "Indiranagar<br />Bengaluru, 560-075"
+    address: "Vijaynagar<br />Bengaluru, 560-040"
   button:
     icon: "icon-mail-fill"
     btnText: "Send Message"
