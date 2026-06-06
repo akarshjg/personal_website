@@ -1,5 +1,13 @@
+[build]
+  command = "hugo"
+  publish = "public"
+
+[build.environment]
+  HUGO_VERSION = "0.90.1"
+  NODE_VERSION = "18.20.0"
+
 [context]
   [context.production]
     [context.production.environment]
       HUGO_VERSION = "0.90.1"
-      NODE_VERSION = "18"
+      NODE_VERSION = "18.20.0"
