@@ -1,0 +1,18 @@
+<li class="blog-summary col-sm-12 {{ if .Params.featured }}featured{{ end }}">
+    <h5 class="blog-title">
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </h5>
+    <p class="blog-meta">
+        Published on {{ .Date.Format "January 2, 2006" }}
+        {{ with .Params.blog_categories }}
+            | Categories: {{ delimit . ", " }}
+        {{ end }}
+        {{ with .Params.tags }}
+            | Tags: {{ delimit . ", " }}
+        {{ end }}
+    </p>
+    {{ if gt (len .Summary) 0 }}
+        <p class="blog-summary-text">{{ .Summary }}</p>
+    {{ end }}
+    <a class="read-more-link" href="{{ .Permalink }}">Read More →</a>
+</li>

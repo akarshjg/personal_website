@@ -3,16 +3,30 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.akarsh.xyz/</loc>
-    <lastmod>2020-09-07T15:55:57+05:30</lastmod>
+    <lastmod>2023-07-07T15:55:57+05:30</lastmod>
   </url><url>
     <loc>https://www.akarsh.xyz/blog/</loc>
+    <lastmod>2023-07-07T15:55:57+05:30</lastmod>
+  </url><url>
+    <loc>https://www.akarsh.xyz/blog/post_two/</loc>
+    <lastmod>2023-07-07T15:55:57+05:30</lastmod>
+  </url><url>
+    <loc>https://www.akarsh.xyz/tags/introduction/</loc>
     <lastmod>2020-09-07T15:55:57+05:30</lastmod>
   </url><url>
     <loc>https://www.akarsh.xyz/blog/my_first_post/</loc>
     <lastmod>2020-09-07T15:55:57+05:30</lastmod>
   </url><url>
-    <loc>https://www.akarsh.xyz/categories/</loc>
+    <loc>https://www.akarsh.xyz/tags/personal/</loc>
+    <lastmod>2020-09-07T15:55:57+05:30</lastmod>
   </url><url>
     <loc>https://www.akarsh.xyz/tags/</loc>
+    <lastmod>2020-09-07T15:55:57+05:30</lastmod>
+  </url><url>
+    <loc>https://www.akarsh.xyz/books/</loc>
+  </url><url>
+    <loc>https://www.akarsh.xyz/books/accelerate/</loc>
+  </url><url>
+    <loc>https://www.akarsh.xyz/categories/</loc>
   </url>
 </urlset>

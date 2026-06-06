@@ -23,7 +23,7 @@
 
     <p class="lead">📚 This is my blog post section👂. These thoughts are my own and only represent my ideas at the given time with the data that I have access to.</p>
 
-            {{ $blog_categories := slice "Engineering Management" "Organization design" "Software engineering and development" "Technical interview preparation" "Product, strategy and business" "Leadership" "Workplace and culture" "Biographies/company stories" "Psychology (cognitive, evolutionary, phylosophy...)" "Society, world and future" "Sport & performance" "My reading list" }}
+            {{ $blog_categories := slice "Mindless Musings" "Product, strategy and business" "Leadership" "Workplace and culture" }}
               {{ range $blog_categories }}
                <div class="row">
                 <h2 id="{{ anchorize . }}" class="blog-category clearfix">

@@ -27,34 +27,50 @@ theme = "raditian-free-hugo-theme"
 
   [[menu.header]]
   name = "About"
-  URL = "#about"
+  URL = "/#about"
   weight = 2
 
-  # [[menu.header]]
-  # name = "Portfolio"
-  # URL = "#portfolio"
-  # weight = 3
+
+   # Add Blog to the Header Menu
+  [[menu.header]]
+  name = "Blog"
+  URL = "/blog/"
+  weight = 3
+
+    # Add Books to the Header Menu
+  [[menu.header]]
+  name = "Books"
+  URL = "/books/"
+  weight = 4
 
   [[menu.header]]
   name = "Contact"
-  URL = "#contact"
-  weight = 3
+  URL = "/#contact"
+  weight = 5
 
 
   [[menu.footer]]
   name = "About"
-  URL = "#about"
+  URL = "/#about"
   weight = 2
 
-  # [[menu.footer]]
-  # name = "Portfolio"
-  # URL = "#portfolio"
-  # weight = 3
+
+  # Add Blog to the Footer Menu
+  [[menu.footer]]
+  name = "Blog"
+  URL = "/blog/"
+  weight = 3
+
+    # Add Books to the Footer Menu
+  [[menu.footer]]
+  name = "Books"
+  URL = "/books/"
+  weight = 4
 
   [[menu.footer]]
   name = "Contact"
-  URL = "#contact"
-  weight = 3
+  URL = "/#contact"
+  weight = 5
 
 
 [params]
@@ -69,7 +85,7 @@ theme = "raditian-free-hugo-theme"
     text2 = "galagali"
 
   [params.footer]
-      copyright = "© 2023 | Akarsh Galagali. All rights reserved."
+      copyright = "© 2023 - 2026 | Akarsh Galagali. All rights reserved."
       # [params.footer.radity_logo]
       #   x = "img/general/design-and-code-radity.png"
       #   _2x = "img/general/design-and-code-radity@2x.png"

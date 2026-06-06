@@ -1,0 +1,57 @@
+<!-- inject:../components/baseHead/baseHeadStart.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{ partial "head.html" . }}
+    {{ partial "head_custom.html" . }}
+  </head>
+
+  <body>
+    {{ partial "header.html" . }}
+
+    <section id="blog-post" class="section section--border-bottom rad-animation-group">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1>{{ .Title }}</h1>
+            <p class="blog-meta">
+              Published on {{ .Date.Format "January 2, 2006" }}
+              {{ with .Params.blog_categories }}
+                | Categories: {{ delimit . ", " }}
+              {{ end }}
+              {{ with .Params.tags }}
+                | Tags: {{ delimit . ", " }}
+              {{ end }}
+            </p>
+            <hr />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <article>
+              {{ .Content | safeHTML }}
+            </article>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-12">
+            <h3>Related Posts</h3>
+            <ul>
+              {{ range where .Site.RegularPages "Type" "blog" }}
+                {{ if ne .Permalink $.Permalink }}
+                  <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                {{ end }}
+              {{ end }}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {{ partial "footer.html" . }}
+    {{ partial "base-foot.html" . }}
+  </body>
+</html>
+<!-- endinject -->

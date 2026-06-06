@@ -1,0 +1,99 @@
+/* You can customize theme styles here */
+
+/* More specific selectors for Blog and Books sections */
+.site-content #blog a,
+.site-content #books a,
+.site-content .blog-category a,
+.site-content .book-category a,
+.site-content .blog-summary a,
+.site-content .book-content a {
+    color: #e93e34 !important;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.site-content #blog a:hover,
+.site-content #books a:hover,
+.site-content .blog-category a:hover,
+.site-content .book-category a:hover,
+.site-content .blog-summary a:hover,
+.site-content .book-content a:hover {
+    color: #000000 !important;
+}
+
+/* Blog and Books link styles */
+.blogs a,
+.books a {
+    color: #e93e34;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.blogs a:hover,
+.books a:hover {
+    color: #000000;
+}
+
+/* Anchor link styles */
+.site-content a[href*="#"] {
+    color: #e93e34;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.site-content a[href*="#"]:hover {
+    color: #000000;
+}
+
+/* Single comprehensive style for all blog-related links */
+.site-content .blog-section a,
+.site-content #blog a,
+.blog-content a,
+.blog-list a,
+.blog-category a,
+.blog-summary a,
+.blogs a,
+.blog-post a,
+.read-more,
+a[href^="/blog/"] {
+    color: #e93e34 !important;
+    text-decoration: none !important;
+    transition: color 0.3s ease;
+}
+
+/* Hover state */
+.site-content .blog-section a:hover,
+.site-content #blog a:hover,
+.blog-content a:hover,
+.blog-list a:hover,
+.blog-category a:hover,
+.blog-summary a:hover,
+.blogs a:hover,
+.blog-post a:hover,
+.read-more:hover,
+a[href^="/blog/"]:hover {
+    color: #000000 !important;
+}
+
+/* Override all link styles in blog section */
+body .site-content a {
+    color: #e93e34 !important;
+    text-decoration: none !important;
+    transition: color 0.3s ease;
+}
+
+body .site-content a:hover {
+    color: #000000 !important;
+}
+
+/* Center profile picture */
+.about__profile-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__profile-picture img {
+    max-width: 100%;
+    height: auto;
+}

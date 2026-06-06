@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>https://www.akarsh.xyz/</link>
+    <description>Recent content on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 07 Jul 2023 15:55:57 +0530</lastBuildDate><atom:link href="https://www.akarsh.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My_second_post</title>
+      <link>https://www.akarsh.xyz/blog/post_two/</link>
+      <pubDate>Fri, 07 Jul 2023 15:55:57 +0530</pubDate>
+      
+      <guid>https://www.akarsh.xyz/blog/post_two/</guid>
+      <description>Testing if this also works!</description>
+    </item>
+    
+    <item>
+      <title>Journey Along the Road Less Travelled</title>
+      <link>https://www.akarsh.xyz/blog/my_first_post/</link>
+      <pubDate>Mon, 07 Sep 2020 15:55:57 +0530</pubDate>
+      
+      <guid>https://www.akarsh.xyz/blog/my_first_post/</guid>
+      <description>Welcome to My Corner of the Internet: An Introduction Hello and welcome! If you&amp;rsquo;re reading this, you&amp;rsquo;re probably curious about who I am. This blog is a place for me to document my thoughts, experiences, and journey, and I wanted to kick things off by giving you a little introduction to the person behind the words.
+Embracing the Road Less Travelled One of the defining aspects of my life has been a consistent inclination towards taking the &amp;ldquo;road less travelled&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations</title>
+      <link>https://www.akarsh.xyz/books/accelerate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.akarsh.xyz/books/accelerate/</guid>
+      <description>The book draws data from the largest study of high-performing software organizations to identify key practices that contribute to software delivery performance. Its aim is to help organizations improve the speed and quality of their software development. The practices recommended include investing in infrastructure and automation, empowering teams, and using data to drive decisions. The book provides practical guidance on how organizations can adopt these practices in order to accelerate their software development and delivery.</description>
+    </item>
+    
+  </channel>
+</rss>

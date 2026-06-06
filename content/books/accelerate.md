@@ -1,7 +1,7 @@
 ---
 title: "Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations"
 book_authors: ["Nicole Forsgren, Jez Humble and Gene Kim"]
-book_categories: ["Organization design"]
+book_categories: ["Non-Fiction"]
 link: "https://www.goodreads.com/search?q=Accelerate+Nicole+Forsgren,+Jez+Humble+and+Gene+Kim"
 featured: true
 ---
