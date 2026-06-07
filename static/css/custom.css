@@ -97,3 +97,21 @@ body .site-content a:hover {
     max-width: 100%;
     height: auto;
 }
+
+/* Style all showcase platform social links consistently */
+.platform-links a {
+    color: #000000 !important;
+    transition: color 0.3s ease;
+    text-decoration: none !important;
+    display: inline-block;
+}
+
+.platform-links a:hover {
+    color: #e93e34 !important; /* Theme's red accent color */
+}
+
+.platform-links a i {
+    font-size: 24px;
+    vertical-align: middle;
+}
+

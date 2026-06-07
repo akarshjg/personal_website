@@ -30,21 +30,15 @@ showcase:
 
     - icon: "twitter"
       URL: "https://twitter.com/akarshgalagali"
-    #
-    # - icon: "dribbble"
-    # #   URL: "https://dribbble.com/radity"
-    #
-    # - icon: "behance"
-    #   URL: "https://www.behance.net/radity-digital"
-    #
-    # - icon: "youtube"
-    #   URL: "https://www.youtube.com/channel/UCojEc6SPO-W1_CoeHhK9-Zw"
-    #
+
     - icon: "instagram"
       URL: "https://www.instagram.com/akarsh.galagali/"
 
-    - icon: "facebook"
-      URL: "https://www.facebook.com/akarshjg/"
+    - icon: "fa-brands fa-goodreads"
+      URL: "https://www.goodreads.com/"
+
+    - icon: "fa-brands fa-spotify"
+      URL: "https://open.spotify.com/"
 
     # - icon: "codepen"
     #   URL: "#"
