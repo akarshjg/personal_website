@@ -32,9 +32,24 @@
     <div class="row platform-links">
       <div class="col-12">
         {{ range .Site.Data.homepage.showcase.socialLinks }}
-        <a href="{{ .URL | absURL }}" target="_blank"
-          ><i class="{{ if hasPrefix .icon "fa" }}{{ .icon }}{{ else }}icon-{{ .icon }}-line{{ end }}"></i
-        ></a>
+        <a href="{{ .URL | absURL }}" target="_blank">
+          {{- if eq .icon "spotify" -}}
+          <svg class="custom-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M 7.5 9.5 A 7 7 0 0 1 16.5 9.5"></path>
+            <path d="M 8.5 12.5 A 5.5 5.5 0 0 1 15.5 12.5"></path>
+            <path d="M 9.5 15.5 A 4 4 0 0 1 14.5 15.5"></path>
+          </svg>
+          {{- else if eq .icon "goodreads" -}}
+          <svg class="custom-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+            <circle cx="12" cy="10" r="2.5"></circle>
+            <path d="M14.5 10v3.5a2.5 2.5 0 0 1-5 0"></path>
+          </svg>
+          {{- else -}}
+          <i class="icon-{{ .icon }}-line"></i>
+          {{- end -}}
+        </a>
         {{ end }}
       </div>
     </div>

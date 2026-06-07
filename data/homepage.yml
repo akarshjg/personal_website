@@ -34,11 +34,11 @@ showcase:
     - icon: "instagram"
       URL: "https://www.instagram.com/akarsh.galagali/"
 
-    - icon: "fa-brands fa-goodreads"
-      URL: "https://www.goodreads.com/"
+    - icon: "goodreads"
+      URL: "https://www.goodreads.com/akarshjg"
 
-    - icon: "fa-brands fa-spotify"
-      URL: "https://open.spotify.com/"
+    - icon: "spotify"
+      URL: "https://open.spotify.com/user/74q2sv1jy5f0nap1xr95a1pvk?si=16be700c6fe14af3"
 
     # - icon: "codepen"
     #   URL: "#"

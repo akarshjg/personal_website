@@ -99,19 +99,71 @@ body .site-content a:hover {
 }
 
 /* Style all showcase platform social links consistently */
-.platform-links a {
+.rad-showcase .platform-links {
+    margin-top: 40px !important;
+}
+
+@media (min-width: 992px) {
+    .rad-showcase .platform-links {
+        margin-top: 92px !important;
+    }
+}
+
+/* Base style for individual social links */
+.rad-showcase .platform-links a {
+    display: inline-block !important;
     color: #000000 !important;
-    transition: color 0.3s ease;
     text-decoration: none !important;
-    display: inline-block;
+    margin-right: 17px !important; /* Fixed consistent spacing on mobile */
+    line-height: 1 !important;
+    vertical-align: middle !important;
+    transition: transform 0.15s cubic-bezier(.645,.045,.355,1) !important;
 }
 
-.platform-links a:hover {
-    color: #e93e34 !important; /* Theme's red accent color */
+@media (min-width: 992px) {
+    .rad-showcase .platform-links a {
+        margin-right: 25px !important; /* Fixed consistent spacing on desktop */
+    }
 }
 
-.platform-links a i {
-    font-size: 24px;
-    vertical-align: middle;
+/* Enforce hover zoom on the <a> link element directly */
+.rad-showcase .platform-links a:hover {
+    transform: scale(1.2) !important;
+    color: #000000 !important; /* Keep it black on hover per user request */
+}
+
+/* Align and size all icon elements identically (both rad-icons and custom SVGs) */
+.rad-showcase .platform-links [class^="icon-"],
+.rad-showcase .platform-links .custom-icon {
+    font-size: 17px !important;
+    width: 17px !important;
+    height: 17px !important;
+    display: inline-block !important;
+    color: #000000 !important;
+    margin: 0 !important; /* Reset default theme margins to maintain pixel-perfect link spacing */
+    padding: 0 !important;
+    vertical-align: middle !important;
+}
+
+@media (min-width: 992px) {
+    .rad-showcase .platform-links [class^="icon-"],
+    .rad-showcase .platform-links .custom-icon {
+        font-size: 19px !important;
+        width: 19px !important;
+        height: 19px !important;
+    }
+}
+
+/* Ensure the SVG outline icons match the black color of the font icons */
+.rad-showcase .platform-links svg.custom-icon {
+    stroke: #000000 !important;
+    fill: none !important;
+}
+
+/* Disable the default theme :before zoom to avoid double zooming */
+.rad-showcase .platform-links [class^="icon-"]::before,
+.rad-showcase .platform-links [class^="icon-"]:hover::before {
+    transform: none !important;
+    transition: none !important;
 }
 
