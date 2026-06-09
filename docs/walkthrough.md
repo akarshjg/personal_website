@@ -9,7 +9,8 @@ All tasks have been successfully completed! Below is a summary of the features, 
 - **Features**: 
   - Converts a Goodreads `.csv` library export (from "My Books" -> "Tools" -> "Export Library") into Hugo draft pages.
   - Formats author lists, parses user ratings, handles URL mapping, and slugifies book titles.
-  - Skips already existing files to preserve manual updates/edits.
+  - **Dynamic Tag Syncing (Option B)**: If a book markdown file already exists, it checks the tags. If there is a change, it updates only the `tags` field in the front matter inline, fully preserving the rest of the metadata and custom body notes/reviews.
+  - **Edition Check Protection**: Parses the book ID from the `link` field of existing markdown files and checks it against the CSV. If the user has multiple editions of the same book in the export, it skips non-matching editions to prevent thrashing/overwriting tags.
 
 ### 2. Pre-Populated and Imported All Goodreads Books
 - Generated **338 markdown draft pages** in `content/books/` from your library export CSV file (`goodreads_library_export.csv`).
