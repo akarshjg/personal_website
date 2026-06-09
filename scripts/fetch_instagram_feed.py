@@ -40,6 +40,17 @@ def main():
                 alt_clean = html.unescape(alt_text).strip()
                 img_url_clean = html.unescape(img_url)
                 
+                # Reconstruct direct Instagram CDN URL to bypass proxy CORP (Cross-Origin Resource Policy) blocks
+                direct_url = img_url_clean
+                url_match = re.search(r'\?([^/]+)/([^?]+)\?(.*)$', img_url_clean)
+                if url_match:
+                    folder = url_match.group(1)
+                    filename = url_match.group(2)
+                    query = url_match.group(3)
+                    host_match = re.search(r'_nc_ht=([^&]+)', query)
+                    host = host_match.group(1) if host_match else 'scontent-atl3-2.cdninstagram.com'
+                    direct_url = f"https://{host}/v/{folder}/{filename}?{query}"
+                
                 # Clean up "by @aio.wiz" or similar from the end of the caption
                 caption = re.sub(r'\s*by\s*@[\w.]+\s*$', '', alt_clean, flags=re.IGNORECASE).strip()
                 
@@ -47,7 +58,7 @@ def main():
                 
                 photography_list.append({
                     "id": f"insta-{i}",
-                    "mediaUrl": img_url_clean,
+                    "mediaUrl": direct_url,
                     "permalink": permalink,
                     "caption": caption or "Captured moment.",
                     "mediaType": "IMAGE"
