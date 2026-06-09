@@ -1,5 +1,5 @@
 [build]
-  command = "hugo"
+  command = "python3 scripts/import_goodreads_csv.py goodreads_library_export.csv && hugo"
   publish = "public"
 
 [build.environment]
