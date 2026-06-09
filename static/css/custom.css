@@ -405,6 +405,10 @@ h2.book-category a.book-category-anchor:hover .icon {
     -webkit-backdrop-filter: blur(12px);
     opacity: 0;
     transition: opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .lightbox-modal.show {
