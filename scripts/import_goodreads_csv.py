@@ -133,18 +133,61 @@ def extract_tags(shelves, exclusive_shelf):
             tags.append(t_clean)
     return tags
 
-def is_draft_file(filepath):
-    if not os.path.exists(filepath):
-        return True
-    try:
-        with open(filepath, 'r', encoding='utf-8') as f:
-            content = f.read()
-            # If draft: true is present, it's a draft
-            if "draft: true" in content:
-                return True
-    except Exception:
-        pass
-    return False
+def get_existing_tags(front_matter):
+    # Try inline format: tags: ['a', 'b']
+    inline_match = re.search(r'tags:\s*\[(.*?)\]', front_matter)
+    if inline_match:
+        return [t.strip().strip("'").strip('"') for t in inline_match.group(1).split(',') if t.strip()]
+    
+    # Try block format:
+    # tags:
+    #   - a
+    #   - b
+    lines = front_matter.split('\n')
+    tags = []
+    in_tags = False
+    for line in lines:
+        if line.strip().startswith('tags:'):
+            in_tags = True
+            continue
+        if in_tags:
+            # If we hit another key, stop
+            if line.strip() and not line.strip().startswith('-'):
+                break
+            if line.strip().startswith('-'):
+                tag_val = line.replace('-', '', 1).strip().strip("'").strip('"')
+                tags.append(tag_val)
+    return tags
+
+def update_front_matter_tags(front_matter, new_tags):
+    lines = front_matter.split('\n')
+    new_lines = []
+    in_tags_block = False
+    tags_inserted = False
+    
+    for line in lines:
+        stripped = line.strip()
+        if stripped.startswith('tags:'):
+            new_lines.append(f"tags: {repr(new_tags)}")
+            tags_inserted = True
+            # If it's a block format, we want to skip subsequent block items
+            if not stripped.endswith(']'):
+                in_tags_block = True
+            continue
+            
+        if in_tags_block:
+            if stripped.startswith('-'):
+                # Skip this block item
+                continue
+            else:
+                in_tags_block = False
+                
+        new_lines.append(line)
+        
+    if not tags_inserted:
+        new_lines.append(f"tags: {repr(new_tags)}")
+        
+    return '\n'.join(new_lines)
 
 def main():
     csv_filename = "goodreads_export.csv"
@@ -183,15 +226,66 @@ def main():
                 
             filepath = os.path.join(output_dir, f"{slug}.md")
             
-            # Check if file exists and whether we can overwrite it
+            # Process authors
+            author = row.get("Author", "").strip()
+            additional_authors = row.get("Additional Authors", "").strip()
+            authors = [author]
+            if additional_authors:
+                for aa in additional_authors.split(','):
+                    aa_clean = aa.strip()
+                    if aa_clean and aa_clean not in authors:
+                        authors.append(aa_clean)
+            
+            # Extract tags from shelves
+            shelves = row.get("Bookshelves", "")
+            exclusive_shelf = row.get("Exclusive Shelf", "")
+            tags = extract_tags(shelves, exclusive_shelf)
+            
+            # Check if file exists and whether we can sync tags
             file_exists = os.path.exists(filepath)
             if file_exists:
-                if not is_draft_file(filepath):
-                    print(f"Skipped (published/non-draft): {filepath}")
-                    skipped += 1
-                    continue
-                else:
-                    overwritten += 1
+                try:
+                    with open(filepath, 'r', encoding='utf-8') as f_in:
+                        existing_content = f_in.read()
+                    
+                    parts = existing_content.split('---', 2)
+                    if len(parts) >= 3:
+                        front_matter = parts[1]
+                        body = parts[2]
+                        
+                        # Extract book ID from link in front matter to check if it matches this edition
+                        link_match = re.search(r'link:\s*"(.*?)"', front_matter)
+                        if link_match:
+                            existing_link = link_match.group(1)
+                            existing_book_id_match = re.search(r'/show/(\d+)', existing_link)
+                            if existing_book_id_match:
+                                existing_book_id = existing_book_id_match.group(1)
+                                if existing_book_id != book_id:
+                                    # This is a different edition of the same book, skip to avoid overwriting tags
+                                    skipped += 1
+                                    continue
+                        
+                        existing_tags = get_existing_tags(front_matter)
+                        if set(existing_tags) == set(tags):
+                            # No change in tags, skip completely
+                            skipped += 1
+                            continue
+                        
+                        # Update tags in front matter
+                        new_front_matter = update_front_matter_tags(front_matter, tags)
+                        new_content = parts[0] + '---' + new_front_matter + '---' + body
+                        
+                        with open(filepath, 'w', encoding='utf-8') as f_out:
+                            f_out.write(new_content)
+                        
+                        print(f"Updated tags: {filepath}")
+                        overwritten += 1
+                        continue
+                except Exception as ex:
+                    print(f"Error updating tags for {filepath}: {ex}")
+                
+                skipped += 1
+                continue
             else:
                 count += 1
                 
