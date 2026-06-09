@@ -48,6 +48,12 @@ theme = "raditian-free-hugo-theme"
   URL = "/books/"
   weight = 4
 
+  # Add Photography to the Header Menu
+  [[menu.header]]
+  name = "Photography"
+  URL = "/photography/"
+  weight = 4.5
+
   [[menu.header]]
   name = "Contact"
   URL = "/#contact"
@@ -71,6 +77,12 @@ theme = "raditian-free-hugo-theme"
   name = "Books"
   URL = "/books/"
   weight = 4
+
+  # Add Photography to the Footer Menu
+  [[menu.footer]]
+  name = "Photography"
+  URL = "/photography/"
+  weight = 4.5
 
   [[menu.footer]]
   name = "Contact"

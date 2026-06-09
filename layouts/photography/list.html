@@ -1,0 +1,104 @@
+<!-- inject:../components/baseHead/baseHeadStart.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    {{ partial "head.html" . }}
+
+    {{ partial "head_custom.html" . }}
+
+</head>
+
+<body>
+
+	{{ partial "header.html" . }}
+
+    <section id="photography" class="section section--border-bottom rad-animation-group">
+      <div class="container">
+        <div class="row rad-fade-down">
+          <div class="col-12 text-center mb-5">
+            <h1 class="display-1">Photography</h1>
+            <p class="lead">
+              A collection of moments captured behind the lens.
+              <br/>
+              Synced automatically from my Instagram handle <a href="https://www.instagram.com/aio.wiz/" target="_blank" rel="noopener noreferrer" style="color: #e93e34; font-weight: 600;">@aio.wiz</a>.
+            </p>
+          </div>
+        </div>
+
+        {{ $photography := site.Data.photography }}
+        {{ if $photography }}
+        <div class="gallery-grid rad-fade-down">
+          {{ range $photography }}
+          <div class="gallery-item" onclick="openLightbox(this)" style="cursor: zoom-in;">
+            <img class="gallery-img lozad" 
+                 src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                 data-src="{{ .mediaUrl }}" 
+                 alt="{{ .caption | default "Instagram Photography" }}" 
+                 style="width: 100%; height: auto; display: block; border-radius: 12px; transition: transform 0.3s ease;">
+            <div class="gallery-overlay">
+              <div class="gallery-caption">{{ .caption | default "Captured moment" }}</div>
+              <div class="gallery-meta">
+                <a href="{{ .permalink }}" target="_blank" rel="noopener noreferrer" class="instagram-link" onclick="event.stopPropagation();">
+                  View on Instagram ↗
+                </a>
+              </div>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+        {{ else }}
+        <div class="row text-center pt-5">
+          <div class="col-12 text-muted">
+            <p>No photography works added yet. Check back soon!</p>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="lightbox-modal" onclick="closeLightbox()">
+      <span class="lightbox-close">&times;</span>
+      <img class="lightbox-content" id="lightbox-img" alt="Enlarged photography view">
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+
+    <script>
+      function openLightbox(element) {
+        var modal = document.getElementById("lightbox-modal");
+        var img = document.getElementById("lightbox-img");
+        var caption = document.getElementById("lightbox-caption");
+        var clickedImg = element.querySelector(".gallery-img");
+        
+        img.src = clickedImg.getAttribute('data-src') || clickedImg.src;
+        caption.innerHTML = clickedImg.alt;
+        
+        modal.style.display = "flex";
+        setTimeout(function() {
+          modal.classList.add("show");
+        }, 10);
+      }
+
+      function closeLightbox() {
+        var modal = document.getElementById("lightbox-modal");
+        modal.classList.remove("show");
+        setTimeout(function() {
+          modal.style.display = "none";
+        }, 300);
+      }
+
+      // Close modal on escape key
+      document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+          closeLightbox();
+        }
+      });
+    </script>
+
+	{{ partial "footer.html" . }}
+    {{ partial "base-foot.html" . }}
+</body>
+
+</html>

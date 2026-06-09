@@ -1,5 +1,5 @@
 [build]
-  command = "python3 scripts/import_goodreads_csv.py goodreads_library_export.csv && hugo"
+  command = "python3 scripts/fetch_instagram_feed.py && python3 scripts/import_goodreads_csv.py goodreads_library_export.csv && hugo"
   publish = "public"
 
 [build.environment]
