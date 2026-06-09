@@ -323,86 +323,130 @@
 
             
               
+                
+                
                <div class="row">
                 <h2 id="mindless-musings" class="blog-category clearfix">
                   <a href="#mindless-musings" class="blog-category-anchor">Mindless Musings</a>
                 </h2>
                   <ul class="row col-12 blog-category-content">
                   
-                    <li class="blog-summary col-sm-12 ">
-    <h5 class="blog-title">
-        <a href="https://www.akarsh.xyz/blog/post_two/">My_second_post</a>
+                    
+
+<li class="blog-summary col-sm-12  ">
+    <h5 class="blog-title" style="display: flex; align-items: center; flex-wrap: wrap; line-height: 1.25;">
+        <a href="https://www.akarsh.xyz/blog/post_two/" class="blog-title-link">My_second_post</a>
+        
     </h5>
     <p class="blog-meta">
         Published on July 7, 2023
-        
-            | Categories: Mindless Musings
-        
-        
     </p>
     
         <p class="blog-summary-text">Testing if this also works!</p>
     
     <a class="read-more-link" href="https://www.akarsh.xyz/blog/post_two/">Read More →</a>
-</li> 
+</li>
+
                   
-                    <li class="blog-summary col-sm-12 ">
-    <h5 class="blog-title">
-        <a href="https://www.akarsh.xyz/blog/my_first_post/">Journey Along the Road Less Travelled</a>
+                    
+
+<li class="blog-summary col-sm-12  ">
+    <h5 class="blog-title" style="display: flex; align-items: center; flex-wrap: wrap; line-height: 1.25;">
+        <a href="https://www.akarsh.xyz/blog/my_first_post/" class="blog-title-link">Journey Along the Road Less Travelled</a>
+        
+            <span class="blog-tags" style="margin-left: 12px; font-size: 12px; font-weight: 500; display: inline-flex; align-items: center; gap: 6px;">
+            
+                <a href="https://www.akarsh.xyz/tags/introduction">#introduction</a>
+            
+                <a href="https://www.akarsh.xyz/tags/personal">#personal</a>
+            
+            </span>
+        
     </h5>
     <p class="blog-meta">
         Published on September 7, 2020
-        
-            | Categories: Mindless Musings
-        
-        
-            | Tags: introduction, personal
-        
     </p>
     
         <p class="blog-summary-text">Welcome to My Corner of the Internet: An Introduction Hello and welcome! If you&rsquo;re reading this, you&rsquo;re probably curious about who I am. This blog is a place for me to document my thoughts, experiences, and journey, and I wanted to kick things off by giving you a little introduction to the person behind the words.
 Embracing the Road Less Travelled One of the defining aspects of my life has been a consistent inclination towards taking the &ldquo;road less travelled&rdquo;.</p>
     
     <a class="read-more-link" href="https://www.akarsh.xyz/blog/my_first_post/">Read More →</a>
-</li> 
+</li>
+
                   
                   </ul>
+                  
+                  
+                  
               </div>
-  
+                
               
-               <div class="row">
-                <h2 id="product-strategy-and-business" class="blog-category clearfix">
-                  <a href="#product-strategy-and-business" class="blog-category-anchor">Product, strategy and business</a>
-                </h2>
-                  <ul class="row col-12 blog-category-content">
-                  
-                  </ul>
-              </div>
-  
+                
+                
               
-               <div class="row">
-                <h2 id="leadership" class="blog-category clearfix">
-                  <a href="#leadership" class="blog-category-anchor">Leadership</a>
-                </h2>
-                  <ul class="row col-12 blog-category-content">
-                  
-                  </ul>
-              </div>
-  
+                
+                
               
-               <div class="row">
-                <h2 id="workplace-and-culture" class="blog-category clearfix">
-                  <a href="#workplace-and-culture" class="blog-category-anchor">Workplace and culture</a>
-                </h2>
-                  <ul class="row col-12 blog-category-content">
-                  
-                  </ul>
-              </div>
-  
+                
+                
               
         </div>
     </section>
 
+    <script>
+    function showNext5Blogs(button) {
+        var row = button.closest('.row');
+        var hiddenBlogs = Array.from(row.querySelectorAll('.blog-summary.hidden-blog.d-none'));
+        
+        var limit = Math.min(5, hiddenBlogs.length);
+        for (var i = 0; i < limit; i++) {
+            hiddenBlogs[i].classList.remove('d-none');
+        }
+        
+        
+        var remainingHidden = row.querySelectorAll('.blog-summary.hidden-blog.d-none').length;
+        if (remainingHidden === 0) {
+            button.classList.add('d-none');
+            row.querySelector('.btn-show-all').classList.add('d-none');
+        }
+        
+        
+        row.querySelector('.btn-collapse').classList.remove('d-none');
+    }
+
+    function showAllBlogs(button) {
+        var row = button.closest('.row');
+        var hiddenBlogs = row.querySelectorAll('.blog-summary.hidden-blog');
+        hiddenBlogs.forEach(function(blog) {
+            blog.classList.remove('d-none');
+        });
+        
+        
+        button.classList.add('d-none');
+        row.querySelector('.btn-show-next').classList.add('d-none');
+        
+        
+        row.querySelector('.btn-collapse').classList.remove('d-none');
+    }
+
+    function collapseListBlogs(button) {
+        var row = button.closest('.row');
+        var hiddenBlogs = row.querySelectorAll('.blog-summary.hidden-blog');
+        hiddenBlogs.forEach(function(blog) {
+            blog.classList.add('d-none');
+        });
+        
+        
+        row.querySelector('.btn-show-next').classList.remove('d-none');
+        row.querySelector('.btn-show-all').classList.remove('d-none');
+        
+        
+        button.classList.add('d-none');
+        
+        
+        row.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    </script>
 
 	<footer class="footer">
   <div class="container">

@@ -167,8 +167,9 @@ body .site-content a:hover {
     transition: none !important;
 }
 
-/* Book Category Headings Harmonization */
-h2.book-category {
+/* Book and Blog Category Headings Harmonization */
+h2.book-category,
+h2.blog-category {
     font-size: 32px !important;
     font-weight: 700 !important;
     color: #000000 !important;
@@ -180,13 +181,15 @@ h2.book-category {
 }
 
 @media (min-width: 992px) {
-    h2.book-category {
+    h2.book-category,
+    h2.blog-category {
         font-size: 48px !important;
         margin-bottom: 30px !important;
     }
 }
 
-h2.book-category a.book-category-anchor {
+h2.book-category a.book-category-anchor,
+h2.blog-category a.blog-category-anchor {
     color: #000000 !important;
     font-size: inherit !important;
     font-weight: inherit !important;
@@ -195,7 +198,8 @@ h2.book-category a.book-category-anchor {
     transition: color 0.3s ease !important;
 }
 
-h2.book-category a.book-category-anchor:hover {
+h2.book-category a.book-category-anchor:hover,
+h2.blog-category a.blog-category-anchor:hover {
     color: #e93e34 !important;
 }
 
@@ -248,13 +252,27 @@ h2.book-category a.book-category-anchor:hover .icon {
     color: #000000 !important;
 }
 
-/* Style book tag links */
-.book-tags a {
+/* Style book and blog tag links */
+.book-tags a,
+.blog-tags a {
     color: #6c757d !important;
     text-decoration: none !important;
     transition: color 0.2s ease !important;
 }
 
-.book-tags a:hover {
+.book-tags a:hover,
+.blog-tags a:hover {
+    color: #e93e34 !important;
+}
+
+/* Blog post title links */
+.blog-title a.blog-title-link {
+    color: #000000 !important;
+    text-decoration: none !important;
+    transition: color 0.2s ease !important;
+    font-weight: 700 !important;
+}
+
+.blog-title a.blog-title-link:hover {
     color: #e93e34 !important;
 }
