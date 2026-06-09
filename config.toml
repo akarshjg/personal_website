@@ -49,6 +49,11 @@ theme = "raditian-free-hugo-theme"
   weight = 4
 
   [[menu.header]]
+  name = "Soundtrack"
+  URL = "/#spotify"
+  weight = 4.8
+
+  [[menu.header]]
   name = "Contact"
   URL = "/#contact"
   weight = 5
@@ -73,6 +78,11 @@ theme = "raditian-free-hugo-theme"
   weight = 4
 
   [[menu.footer]]
+  name = "Soundtrack"
+  URL = "/#spotify"
+  weight = 4.8
+
+  [[menu.footer]]
   name = "Contact"
   URL = "/#contact"
   weight = 5
@@ -80,7 +90,7 @@ theme = "raditian-free-hugo-theme"
 
 [params]
 
-  sections = ["showcase", "about", "education", "experience", "client-and-work", "testimonial", "contact", "newsletter"]
+  sections = ["showcase", "about", "education", "experience", "spotify", "client-and-work", "testimonial", "contact", "newsletter"]
 
 
   googleTagManagerID = "GTM-MFKDFNS" # Google Analytics works with Google Tag Manager
@@ -95,3 +105,9 @@ theme = "raditian-free-hugo-theme"
       #   x = "img/general/design-and-code-radity.png"
       #   _2x = "img/general/design-and-code-radity@2x.png"
       #   alt = "Design & Code - Radity"
+
+[params.spotify]
+  enable = true
+  title = "Soundtrack"
+  description = "As an audiophile, music is an essential companion to my daily workflows. Here is a curated soundtrack that captures my current rotation."
+  playlist_id = "37i9dQZF1DXcBWIGsyNaeg"

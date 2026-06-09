@@ -1,0 +1,32 @@
+{{ if .Site.Params.spotify.enable | default true }}
+<section id="spotify" class="section section--border-bottom rad-animation-group">
+  <div class="container">
+    <div class="row rad-fade-down align-items-center">
+      <div class="col-12 col-md-5 mb-4 mb-md-0">
+        <h2>{{ .Site.Params.spotify.title | default "Soundtrack" }}</h2>
+        <p class="lead">
+          {{ .Site.Params.spotify.description | default "As an audiophile, music is an essential companion to my daily workflows. Here is a curated soundtrack that captures my current rotation." }}
+        </p>
+        {{ if .Site.Params.spotify.profile_url }}
+        <a href="{{ .Site.Params.spotify.profile_url }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Follow on Spotify
+        </a>
+        {{ else }}
+          {{ range .Site.Data.homepage.showcase.socialLinks }}
+            {{ if eq .icon "spotify" }}
+            <a href="{{ .URL }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+              Follow on Spotify
+            </a>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      </div>
+      <div class="col-12 col-md-7">
+        <div class="spotify-embed-container p-2 rounded" style="background: rgba(0,0,0,0.02); border: 1px solid rgba(0,0,0,0.05); border-radius: 16px;">
+          <iframe style="border-radius:12px; display: block;" src="https://open.spotify.com/embed/playlist/{{ .Site.Params.spotify.playlist_id | default "37i9dQZF1DXcBWIGsyNaeg" }}?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
