@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Richard Pevear on </title>
+    <link>https://www.akarsh.xyz/book_authors/richard-pevear/</link>
+    <description>Recent content in Richard Pevear on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://www.akarsh.xyz/book_authors/richard-pevear/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Doctor Zhivago</title>
+      <link>https://www.akarsh.xyz/books/doctor-zhivago/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.akarsh.xyz/books/doctor-zhivago/</guid>
+      <description>Draft page for Doctor Zhivago by Boris Pasternak, Richard Pevear, Larissa Volokhonsky.</description>
+    </item>
+    
+    <item>
+      <title>Notes from Underground</title>
+      <link>https://www.akarsh.xyz/books/notes-from-underground/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.akarsh.xyz/books/notes-from-underground/</guid>
+      <description>Draft page for Notes from Underground by Fyodor Dostoevsky, Donald Fanger, Larissa Volokhonsky, Richard Pevear.</description>
+    </item>
+    
+  </channel>
+</rss>

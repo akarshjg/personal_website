@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Matthew  Ward on </title>
+    <link>https://www.akarsh.xyz/book_authors/matthew-ward/</link>
+    <description>Recent content in Matthew  Ward on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://www.akarsh.xyz/book_authors/matthew-ward/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Stranger</title>
+      <link>https://www.akarsh.xyz/books/the-stranger/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.akarsh.xyz/books/the-stranger/</guid>
+      <description>Draft page for The Stranger by Albert Camus, Matthew Ward.</description>
+    </item>
+    
+  </channel>
+</rss>

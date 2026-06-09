@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kim Stanley Robinson on </title>
+    <link>https://www.akarsh.xyz/book_authors/kim-stanley-robinson/</link>
+    <description>Recent content in Kim Stanley Robinson on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://www.akarsh.xyz/book_authors/kim-stanley-robinson/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Ministry for the Future</title>
+      <link>https://www.akarsh.xyz/books/the-ministry-for-the-future/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.akarsh.xyz/books/the-ministry-for-the-future/</guid>
+      <description>Draft page for The Ministry for the Future by Kim Stanley Robinson.</description>
+    </item>
+    
+  </channel>
+</rss>

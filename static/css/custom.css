@@ -167,3 +167,112 @@ body .site-content a:hover {
     transition: none !important;
 }
 
+/* Book and Blog Category Headings Harmonization */
+h2.book-category,
+h2.blog-category {
+    font-size: 32px !important;
+    font-weight: 700 !important;
+    color: #000000 !important;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+    margin-top: 40px !important;
+    margin-bottom: 20px !important;
+    letter-spacing: -0.2px !important;
+    border: none !important;
+}
+
+@media (min-width: 992px) {
+    h2.book-category,
+    h2.blog-category {
+        font-size: 48px !important;
+        margin-bottom: 30px !important;
+    }
+}
+
+h2.book-category a.book-category-anchor,
+h2.blog-category a.blog-category-anchor {
+    color: #000000 !important;
+    font-size: inherit !important;
+    font-weight: inherit !important;
+    font-family: inherit !important;
+    text-decoration: none !important;
+    transition: color 0.3s ease !important;
+}
+
+h2.book-category a.book-category-anchor:hover,
+h2.blog-category a.blog-category-anchor:hover {
+    color: #e93e34 !important;
+}
+
+/* Style the anchor link icon inside book categories */
+h2.book-category a.book-category-anchor .icon {
+    font-size: 0.6em !important;
+    vertical-align: middle !important;
+    margin-right: 8px !important;
+    opacity: 0.3 !important;
+    transition: opacity 0.2s ease, color 0.2s ease !important;
+}
+
+h2.book-category a.book-category-anchor:hover .icon {
+    opacity: 1 !important;
+    color: #e93e34 !important;
+}
+
+/* Goodreads Book Link Styling */
+.goodreads-link {
+    opacity: 0.6;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    display: inline-flex !important;
+    vertical-align: middle !important;
+}
+
+.goodreads-link:hover {
+    opacity: 1;
+    transform: scale(1.15) !important;
+}
+
+.goodreads-link svg.custom-icon {
+    stroke: #000000 !important;
+    fill: none !important;
+    transition: stroke 0.2s ease !important;
+}
+
+.goodreads-link:hover svg.custom-icon {
+    stroke: #e93e34 !important;
+}
+
+/* Style author links under book items */
+.book-author a {
+    color: #e93e34 !important;
+    text-decoration: none !important;
+    transition: color 0.2s ease !important;
+    font-weight: 600 !important;
+}
+
+.book-author a:hover {
+    color: #000000 !important;
+}
+
+/* Style book and blog tag links */
+.book-tags a,
+.blog-tags a {
+    color: #6c757d !important;
+    text-decoration: none !important;
+    transition: color 0.2s ease !important;
+}
+
+.book-tags a:hover,
+.blog-tags a:hover {
+    color: #e93e34 !important;
+}
+
+/* Blog post title links */
+.blog-title a.blog-title-link {
+    color: #000000 !important;
+    text-decoration: none !important;
+    transition: color 0.2s ease !important;
+    font-weight: 700 !important;
+}
+
+.blog-title a.blog-title-link:hover {
+    color: #e93e34 !important;
+}

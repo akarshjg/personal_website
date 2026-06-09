@@ -2,6 +2,11 @@ baseURL = "https://www.akarsh.xyz/"
 languageCode = "en-us"
 theme = "raditian-free-hugo-theme"
 
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  book_author = "book_authors"
+
 # Plugins
 [params.plugins]
 

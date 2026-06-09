@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Makoto Shinkai on </title>
+    <link>https://www.akarsh.xyz/book_authors/makoto-shinkai/</link>
+    <description>Recent content in Makoto Shinkai on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://www.akarsh.xyz/book_authors/makoto-shinkai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Your name. 01</title>
+      <link>https://www.akarsh.xyz/books/your-name-01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.akarsh.xyz/books/your-name-01/</guid>
+      <description>Draft page for Your name. 01 by Ranmaru Kotone, Makoto Shinkai.</description>
+    </item>
+    
+    <item>
+      <title>your name. 03</title>
+      <link>https://www.akarsh.xyz/books/your-name-03/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.akarsh.xyz/books/your-name-03/</guid>
+      <description>Draft page for your name. 03 by Ranmaru Kotone, Makoto Shinkai.</description>
+    </item>
+    
+    <item>
+      <title>your name. 2</title>
+      <link>https://www.akarsh.xyz/books/your-name-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.akarsh.xyz/books/your-name-2/</guid>
+      <description>Draft page for your name. 2 by Ranmaru Kotone, Makoto Shinkai.</description>
+    </item>
+    
+  </channel>
+</rss>

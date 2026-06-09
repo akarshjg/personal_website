@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Elif Shafak on </title>
+    <link>https://www.akarsh.xyz/book_authors/elif-shafak/</link>
+    <description>Recent content in Elif Shafak on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://www.akarsh.xyz/book_authors/elif-shafak/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Forty Rules of Love</title>
+      <link>https://www.akarsh.xyz/books/the-forty-rules-of-love/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.akarsh.xyz/books/the-forty-rules-of-love/</guid>
+      <description>Draft page for The Forty Rules of Love by Elif Shafak.</description>
+    </item>
+    
+    <item>
+      <title>The Island of Missing Trees</title>
+      <link>https://www.akarsh.xyz/books/the-island-of-missing-trees/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.akarsh.xyz/books/the-island-of-missing-trees/</guid>
+      <description>Draft page for The Island of Missing Trees by Elif Shafak.</description>
+    </item>
+    
+  </channel>
+</rss>

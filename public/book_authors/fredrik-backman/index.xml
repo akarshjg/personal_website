@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fredrik Backman on </title>
+    <link>https://www.akarsh.xyz/book_authors/fredrik-backman/</link>
+    <description>Recent content in Fredrik Backman on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://www.akarsh.xyz/book_authors/fredrik-backman/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Anxious People</title>
+      <link>https://www.akarsh.xyz/books/anxious-people/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.akarsh.xyz/books/anxious-people/</guid>
+      <description>Draft page for Anxious People by Fredrik Backman.</description>
+    </item>
+    
+  </channel>
+</rss>

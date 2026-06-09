@@ -1,0 +1,43 @@
+<!-- inject:../components/baseHead/baseHeadStart.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    {{ partial "head.html" . }}
+
+    {{ partial "head_custom.html" . }}
+
+</head>
+
+<body>
+
+	{{ partial "header.html" . }}
+
+    <section
+      id="books"
+      class="content-list section section--border-bottom rad-animation-group"
+    >
+
+      <div class="container">
+          <div class="row">
+              <div class="col-12 mt-5">
+                  <h2 class="book-category clearfix" style="border: none !important;">Books tagged: #{{ .Title }}</h2>
+              </div>
+          </div>
+          <div class="row">
+              <ul class="row col-12 book-category-content mt-4" style="list-style: none; padding-left: 0;">
+                  {{ range $index, $element := .Pages }}
+                    {{ partial "book-summary.html" (dict "Page" $element "Index" $index "Hide" false) }}
+                  {{ end }}
+              </ul>
+          </div>
+      </div>
+    </section>
+
+	{{ partial "footer.html" . }}
+    {{ partial "base-foot.html" . }}
+</body>
+
+</html>
+<!-- endinject -->

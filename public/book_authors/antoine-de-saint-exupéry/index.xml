@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Antoine de Saint-Exupéry on </title>
+    <link>https://www.akarsh.xyz/book_authors/antoine-de-saint-exup%C3%A9ry/</link>
+    <description>Recent content in Antoine de Saint-Exupéry on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://www.akarsh.xyz/book_authors/antoine-de-saint-exup%C3%A9ry/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Little Prince</title>
+      <link>https://www.akarsh.xyz/books/the-little-prince/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.akarsh.xyz/books/the-little-prince/</guid>
+      <description>Draft page for The Little Prince by Antoine de Saint-Exupéry.</description>
+    </item>
+    
+  </channel>
+</rss>

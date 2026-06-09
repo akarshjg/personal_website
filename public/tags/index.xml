@@ -25,5 +25,41 @@
       <description></description>
     </item>
     
+    <item>
+      <title>currently-reading</title>
+      <link>https://www.akarsh.xyz/tags/currently-reading/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.akarsh.xyz/tags/currently-reading/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>did-not-complete</title>
+      <link>https://www.akarsh.xyz/tags/did-not-complete/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.akarsh.xyz/tags/did-not-complete/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>read</title>
+      <link>https://www.akarsh.xyz/tags/read/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.akarsh.xyz/tags/read/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>to-read</title>
+      <link>https://www.akarsh.xyz/tags/to-read/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.akarsh.xyz/tags/to-read/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

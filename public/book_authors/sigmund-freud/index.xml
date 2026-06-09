@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sigmund Freud on </title>
+    <link>https://www.akarsh.xyz/book_authors/sigmund-freud/</link>
+    <description>Recent content in Sigmund Freud on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://www.akarsh.xyz/book_authors/sigmund-freud/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introductory Lectures on Psychoanalysis</title>
+      <link>https://www.akarsh.xyz/books/introductory-lectures-on-psychoanalysis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.akarsh.xyz/books/introductory-lectures-on-psychoanalysis/</guid>
+      <description>Draft page for Introductory Lectures on Psychoanalysis by Sigmund Freud.</description>
+    </item>
+    
+    <item>
+      <title>The Interpretation of Dreams</title>
+      <link>https://www.akarsh.xyz/books/the-interpretation-of-dreams/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.akarsh.xyz/books/the-interpretation-of-dreams/</guid>
+      <description>Draft page for The Interpretation of Dreams by Sigmund Freud.</description>
+    </item>
+    
+  </channel>
+</rss>

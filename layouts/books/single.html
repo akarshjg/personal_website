@@ -20,20 +20,128 @@
               <br/>
               {{ .Content | safeHTML }}
             </div>
-          </div>
+           </div>
           <div class="row">
             <div class="col-12 col-md-7 mt-7 mt-sm-0">
               {{ range .Params.book_categories }}
-              Other books on {{ . }}
-                 {{ $pages := where site.Pages "Params.book_categories" "in" . }}
-                  {{ range $pages }}
-                    {{ .Render "summary"}} 
+               <div class="row">
+                <div class="col-12">
+                  <h4 class="mb-3">Other books on {{ . }}</h4>
+                </div>
+                  <ul class="row col-12 book-category-content">
+                  {{ $category_books := where site.RegularPages "Params.book_categories" "intersect" (slice . ) }}
+                  
+                  {{ $currently_reading := slice }}
+                  {{ $read := slice }}
+                  {{ $to_read := slice }}
+                  {{ $did_not_complete := slice }}
+                  {{ $others := slice }}
+                  
+                  {{ range $category_books }}
+                    {{ if in .Params.tags "did-not-complete" }}
+                      {{ $did_not_complete = $did_not_complete | append . }}
+                    {{ else if in .Params.tags "currently-reading" }}
+                      {{ $currently_reading = $currently_reading | append . }}
+                    {{ else if in .Params.tags "read" }}
+                      {{ $read = $read | append . }}
+                    {{ else if in .Params.tags "to-read" }}
+                      {{ $to_read = $to_read | append . }}
+                    {{ else }}
+                      {{ $others = $others | append . }}
+                    {{ end }}
                   {{ end }}
+                  
+                  {{ $sorted_books := slice }}
+                  {{ range sort $currently_reading "Title" "asc" }}
+                    {{ $sorted_books = $sorted_books | append . }}
+                  {{ end }}
+                  {{ range sort $read "Title" "asc" }}
+                    {{ $sorted_books = $sorted_books | append . }}
+                  {{ end }}
+                  {{ range sort $to_read "Title" "asc" }}
+                    {{ $sorted_books = $sorted_books | append . }}
+                  {{ end }}
+                  {{ range sort $others "Title" "asc" }}
+                    {{ $sorted_books = $sorted_books | append . }}
+                  {{ end }}
+                  {{ range sort $did_not_complete "Title" "asc" }}
+                    {{ $sorted_books = $sorted_books | append . }}
+                  {{ end }}
+                  
+                  {{ range $index, $element := $sorted_books }}
+                    {{ partial "book-summary.html" (dict "Page" $element "Index" $index "Hide" (ge $index 5)) }}
+                  {{ end }}
+                  </ul>
+                  
+                  {{ $count := len $sorted_books }}
+                  {{ if gt $count 5 }}
+                    <div class="col-12 text-center mt-2 mb-5 control-panel">
+                      <button class="btn btn-primary btn-sm mx-1 btn-show-next" onclick="showNext5(this)">Show Next 5</button>
+                      <button class="btn btn-primary btn-sm mx-1 btn-show-all" onclick="showAll(this)">Show All</button>
+                      <button class="btn btn-frameless btn-sm mx-1 btn-collapse d-none" onclick="collapseList(this)">Collapse</button>
+                    </div>
+                  {{ end }}
+               </div>
               {{ end }}
             </div>
           </div>
       </div>
     </section>
+
+    <script>
+    function showNext5(button) {
+        var row = button.closest('.row');
+        var hiddenBooks = Array.from(row.querySelectorAll('.book-content.hidden-book.d-none'));
+        
+        var limit = Math.min(5, hiddenBooks.length);
+        for (var i = 0; i < limit; i++) {
+            hiddenBooks[i].classList.remove('d-none');
+        }
+        
+        // Check if there are still hidden books
+        var remainingHidden = row.querySelectorAll('.book-content.hidden-book.d-none').length;
+        if (remainingHidden === 0) {
+            button.classList.add('d-none');
+            row.querySelector('.btn-show-all').classList.add('d-none');
+        }
+        
+        // Show collapse button
+        row.querySelector('.btn-collapse').classList.remove('d-none');
+    }
+
+    function showAll(button) {
+        var row = button.closest('.row');
+        var hiddenBooks = row.querySelectorAll('.book-content.hidden-book');
+        hiddenBooks.forEach(function(book) {
+            book.classList.remove('d-none');
+        });
+        
+        // Hide expand buttons
+        button.classList.add('d-none');
+        row.querySelector('.btn-show-next').classList.add('d-none');
+        
+        // Show collapse button
+        row.querySelector('.btn-collapse').classList.remove('d-none');
+    }
+
+    function collapseList(button) {
+        var row = button.closest('.row');
+        var hiddenBooks = row.querySelectorAll('.book-content.hidden-book');
+        hiddenBooks.forEach(function(book) {
+            book.classList.add('d-none');
+        });
+        
+        // Show expand buttons
+        row.querySelector('.btn-show-next').classList.remove('d-none');
+        row.querySelector('.btn-show-all').classList.remove('d-none');
+        
+        // Hide collapse button
+        button.classList.add('d-none');
+        
+        // Scroll category header back into view
+        row.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    </script>
 
     {{ partial "footer.html" . }} {{ partial "base-foot.html" . }}
   </body>

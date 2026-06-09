@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kazuo Ishiguro on </title>
+    <link>https://www.akarsh.xyz/book_authors/kazuo-ishiguro/</link>
+    <description>Recent content in Kazuo Ishiguro on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://www.akarsh.xyz/book_authors/kazuo-ishiguro/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Never Let Me Go</title>
+      <link>https://www.akarsh.xyz/books/never-let-me-go/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.akarsh.xyz/books/never-let-me-go/</guid>
+      <description>Draft page for Never Let Me Go by Kazuo Ishiguro.</description>
+    </item>
+    
+    <item>
+      <title>The Remains of the Day</title>
+      <link>https://www.akarsh.xyz/books/the-remains-of-the-day/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.akarsh.xyz/books/the-remains-of-the-day/</guid>
+      <description>Draft page for The Remains of the Day by Kazuo Ishiguro.</description>
+    </item>
+    
+  </channel>
+</rss>

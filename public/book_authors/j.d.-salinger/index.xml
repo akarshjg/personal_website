@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>J.D. Salinger on </title>
+    <link>https://www.akarsh.xyz/book_authors/j.d.-salinger/</link>
+    <description>Recent content in J.D. Salinger on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://www.akarsh.xyz/book_authors/j.d.-salinger/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Catcher in the Rye</title>
+      <link>https://www.akarsh.xyz/books/the-catcher-in-the-rye/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.akarsh.xyz/books/the-catcher-in-the-rye/</guid>
+      <description>Draft page for The Catcher in the Rye by J.D. Salinger.</description>
+    </item>
+    
+  </channel>
+</rss>

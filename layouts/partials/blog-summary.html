@@ -1,0 +1,21 @@
+{{ $page := .Page }}
+{{ $hide := .Hide }}
+<li class="blog-summary col-sm-12 {{ if $page.Params.featured }}featured{{ end }} {{ if $hide }}hidden-blog d-none{{ end }}">
+    <h5 class="blog-title" style="display: flex; align-items: center; flex-wrap: wrap; line-height: 1.25;">
+        <a href="{{ $page.Permalink }}" class="blog-title-link">{{ $page.Title }}</a>
+        {{ if $page.Params.tags }}
+            <span class="blog-tags" style="margin-left: 12px; font-size: 12px; font-weight: 500; display: inline-flex; align-items: center; gap: 6px;">
+            {{ range $index, $tag := $page.Params.tags }}
+                <a href="{{ (printf "tags/%s" ($tag | urlize)) | absURL }}">#{{ $tag }}</a>
+            {{ end }}
+            </span>
+        {{ end }}
+    </h5>
+    <p class="blog-meta">
+        Published on {{ $page.Date.Format "January 2, 2006" }}
+    </p>
+    {{ if gt (len $page.Summary) 0 }}
+        <p class="blog-summary-text">{{ $page.Summary }}</p>
+    {{ end }}
+    <a class="read-more-link" href="{{ $page.Permalink }}">Read More →</a>
+</li>

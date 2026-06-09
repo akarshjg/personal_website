@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>George Orwell on </title>
+    <link>https://www.akarsh.xyz/book_authors/george-orwell/</link>
+    <description>Recent content in George Orwell on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://www.akarsh.xyz/book_authors/george-orwell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1984</title>
+      <link>https://www.akarsh.xyz/books/1984/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.akarsh.xyz/books/1984/</guid>
+      <description>Draft page for 1984 by George Orwell.</description>
+    </item>
+    
+    <item>
+      <title>Animal Farm</title>
+      <link>https://www.akarsh.xyz/books/animal-farm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.akarsh.xyz/books/animal-farm/</guid>
+      <description>Draft page for Animal Farm by George Orwell, Russell Baker, C.M. Woodhouse.</description>
+    </item>
+    
+  </channel>
+</rss>

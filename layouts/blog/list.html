@@ -25,21 +25,86 @@
 
             {{ $blog_categories := slice "Mindless Musings" "Product, strategy and business" "Leadership" "Workplace and culture" }}
               {{ range $blog_categories }}
+                {{ $cat_blogs := where site.RegularPages "Params.blog_categories" "intersect" (slice . ) }}
+                {{ if gt (len $cat_blogs) 0 }}
                <div class="row">
                 <h2 id="{{ anchorize . }}" class="blog-category clearfix">
-                  <a href="#{{ anchorize . }}" class="blog-category-anchor"><span class="icon">🔗</span> {{ . }}</a>
+                  <a href="#{{ anchorize . }}" class="blog-category-anchor">{{ . }}</a>
                 </h2>
                   <ul class="row col-12 blog-category-content">
-                  {{ range where (where site.RegularPages "Draft" false) "Params.blog_categories" "intersect" (slice . ) }}
-                    {{ .Render "summary"}} 
+                  {{ range $index, $element := $cat_blogs }}
+                    {{ partial "blog-summary.html" (dict "Page" $element "Index" $index "Hide" (ge $index 5)) }}
                   {{ end }}
                   </ul>
+                  
+                  {{ $count := len $cat_blogs }}
+                  {{ if gt $count 5 }}
+                    <div class="col-12 text-center mt-2 mb-5 control-panel">
+                      <button class="btn btn-primary btn-sm mx-1 btn-show-next" onclick="showNext5Blogs(this)">Show Next 5</button>
+                      <button class="btn btn-primary btn-sm mx-1 btn-show-all" onclick="showAllBlogs(this)">Show All</button>
+                      <button class="btn btn-frameless btn-sm mx-1 btn-collapse d-none" onclick="collapseListBlogs(this)">Collapse</button>
+                    </div>
+                  {{ end }}
               </div>
-  
+                {{ end }}
               {{ end }}
         </div>
     </section>
 
+    <script>
+    function showNext5Blogs(button) {
+        var row = button.closest('.row');
+        var hiddenBlogs = Array.from(row.querySelectorAll('.blog-summary.hidden-blog.d-none'));
+        
+        var limit = Math.min(5, hiddenBlogs.length);
+        for (var i = 0; i < limit; i++) {
+            hiddenBlogs[i].classList.remove('d-none');
+        }
+        
+        // Check if there are still hidden blogs
+        var remainingHidden = row.querySelectorAll('.blog-summary.hidden-blog.d-none').length;
+        if (remainingHidden === 0) {
+            button.classList.add('d-none');
+            row.querySelector('.btn-show-all').classList.add('d-none');
+        }
+        
+        // Show collapse button
+        row.querySelector('.btn-collapse').classList.remove('d-none');
+    }
+
+    function showAllBlogs(button) {
+        var row = button.closest('.row');
+        var hiddenBlogs = row.querySelectorAll('.blog-summary.hidden-blog');
+        hiddenBlogs.forEach(function(blog) {
+            blog.classList.remove('d-none');
+        });
+        
+        // Hide expand buttons
+        button.classList.add('d-none');
+        row.querySelector('.btn-show-next').classList.add('d-none');
+        
+        // Show collapse button
+        row.querySelector('.btn-collapse').classList.remove('d-none');
+    }
+
+    function collapseListBlogs(button) {
+        var row = button.closest('.row');
+        var hiddenBlogs = row.querySelectorAll('.blog-summary.hidden-blog');
+        hiddenBlogs.forEach(function(blog) {
+            blog.classList.add('d-none');
+        });
+        
+        // Show expand buttons
+        row.querySelector('.btn-show-next').classList.remove('d-none');
+        row.querySelector('.btn-show-all').classList.remove('d-none');
+        
+        // Hide collapse button
+        button.classList.add('d-none');
+        
+        // Scroll category header back into view
+        row.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    </script>
 
 	{{ partial "footer.html" . }}
     {{ partial "base-foot.html" . }}

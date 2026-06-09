@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Celeste Ng on </title>
+    <link>https://www.akarsh.xyz/book_authors/celeste-ng/</link>
+    <description>Recent content in Celeste Ng on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://www.akarsh.xyz/book_authors/celeste-ng/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Everything I Never Told You</title>
+      <link>https://www.akarsh.xyz/books/everything-i-never-told-you/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.akarsh.xyz/books/everything-i-never-told-you/</guid>
+      <description>Draft page for Everything I Never Told You by Celeste Ng.</description>
+    </item>
+    
+  </channel>
+</rss>

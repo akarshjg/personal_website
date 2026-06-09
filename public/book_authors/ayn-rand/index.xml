@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ayn Rand on </title>
+    <link>https://www.akarsh.xyz/book_authors/ayn-rand/</link>
+    <description>Recent content in Ayn Rand on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://www.akarsh.xyz/book_authors/ayn-rand/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Fountainhead</title>
+      <link>https://www.akarsh.xyz/books/the-fountainhead/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.akarsh.xyz/books/the-fountainhead/</guid>
+      <description>Draft page for The Fountainhead by Ayn Rand.</description>
+    </item>
+    
+  </channel>
+</rss>

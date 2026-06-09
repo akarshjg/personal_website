@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Graeme Macrae Burnet on </title>
+    <link>https://www.akarsh.xyz/book_authors/graeme-macrae-burnet/</link>
+    <description>Recent content in Graeme Macrae Burnet on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://www.akarsh.xyz/book_authors/graeme-macrae-burnet/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Case Study</title>
+      <link>https://www.akarsh.xyz/books/case-study/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.akarsh.xyz/books/case-study/</guid>
+      <description>Draft page for Case Study by Graeme Macrae Burnet.</description>
+    </item>
+    
+  </channel>
+</rss>
