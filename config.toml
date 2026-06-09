@@ -49,11 +49,6 @@ theme = "raditian-free-hugo-theme"
   weight = 4
 
   [[menu.header]]
-  name = "Soundtrack"
-  URL = "/#spotify"
-  weight = 4.8
-
-  [[menu.header]]
   name = "Contact"
   URL = "/#contact"
   weight = 5
@@ -76,11 +71,6 @@ theme = "raditian-free-hugo-theme"
   name = "Books"
   URL = "/books/"
   weight = 4
-
-  [[menu.footer]]
-  name = "Soundtrack"
-  URL = "/#spotify"
-  weight = 4.8
 
   [[menu.footer]]
   name = "Contact"
@@ -110,4 +100,4 @@ theme = "raditian-free-hugo-theme"
   enable = true
   title = "Soundtrack"
   description = "As an audiophile, music is an essential companion to my daily workflows. Here is a curated soundtrack that captures my current rotation."
-  playlist_id = "37i9dQZF1DXcBWIGsyNaeg"
+  playlist_id = "61uYtKnvqlhzyp9ZqnAQAk"
