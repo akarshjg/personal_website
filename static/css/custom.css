@@ -1,58 +1,57 @@
 /* You can customize theme styles here */
 
 /* More specific selectors for Blog and Books sections */
-.site-content #blog a,
-.site-content #books a,
-.site-content .blog-category a,
-.site-content .book-category a,
-.site-content .blog-summary a,
-.site-content .book-content a {
+#blog a:not(.blog-category-anchor),
+#books a:not(.book-category-anchor):not(.goodreads-link),
+.blog-category a,
+.book-category a,
+.blog-summary a,
+.book-content a:not(.goodreads-link) {
     color: #e93e34 !important;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.site-content #blog a:hover,
-.site-content #books a:hover,
-.site-content .blog-category a:hover,
-.site-content .book-category a:hover,
-.site-content .blog-summary a:hover,
-.site-content .book-content a:hover {
+#blog a:not(.blog-category-anchor):hover,
+#books a:not(.book-category-anchor):not(.goodreads-link):hover,
+.blog-category a:hover,
+.book-category a:hover,
+.blog-summary a:hover,
+.book-content a:not(.goodreads-link):hover {
     color: #000000 !important;
 }
 
 /* Blog and Books link styles */
-.blogs a,
-.books a {
+#blog a,
+#books a {
     color: #e93e34;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.blogs a:hover,
-.books a:hover {
+#blog a:hover,
+#books a:hover {
     color: #000000;
 }
 
 /* Anchor link styles */
-.site-content a[href*="#"] {
+a[href*="#"] {
     color: #e93e34;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.site-content a[href*="#"]:hover {
+a[href*="#"]:hover {
     color: #000000;
 }
 
 /* Single comprehensive style for all blog-related links */
-.site-content .blog-section a,
-.site-content #blog a,
+.blog-section a,
+#blog a,
 .blog-content a,
 .blog-list a,
 .blog-category a,
 .blog-summary a,
-.blogs a,
 .blog-post a,
 .read-more,
 a[href^="/blog/"] {
@@ -62,27 +61,30 @@ a[href^="/blog/"] {
 }
 
 /* Hover state */
-.site-content .blog-section a:hover,
-.site-content #blog a:hover,
+.blog-section a:hover,
+#blog a:hover,
 .blog-content a:hover,
 .blog-list a:hover,
 .blog-category a:hover,
 .blog-summary a:hover,
-.blogs a:hover,
 .blog-post a:hover,
 .read-more:hover,
 a[href^="/blog/"]:hover {
     color: #000000 !important;
 }
 
-/* Override all link styles in blog section */
-body .site-content a {
+/* Override all link styles in content list and blog section */
+body #blog a,
+body #books a:not(.book-category-anchor):not(.goodreads-link),
+body .book-content a:not(.goodreads-link) {
     color: #e93e34 !important;
     text-decoration: none !important;
     transition: color 0.3s ease;
 }
 
-body .site-content a:hover {
+body #blog a:hover,
+body #books a:not(.book-category-anchor):not(.goodreads-link):hover,
+body .book-content a:not(.goodreads-link):hover {
     color: #000000 !important;
 }
 
@@ -154,10 +156,22 @@ body .site-content a:hover {
     }
 }
 
-/* Ensure the SVG outline icons match the black color of the font icons */
-.rad-showcase .platform-links svg.custom-icon {
+/* Ensure the SVG outline icons match the black color of the font icons, overriding default blue link styles */
+.rad-showcase .platform-links a svg,
+.rad-showcase .platform-links a svg *,
+.rad-showcase .platform-links svg.custom-icon,
+.rad-showcase .platform-links svg.custom-icon * {
     stroke: #000000 !important;
+    color: #000000 !important;
     fill: none !important;
+}
+
+.rad-showcase .platform-links a:hover svg,
+.rad-showcase .platform-links a:hover svg *,
+.rad-showcase .platform-links a:hover svg.custom-icon,
+.rad-showcase .platform-links a:hover svg.custom-icon * {
+    stroke: #000000 !important;
+    color: #000000 !important;
 }
 
 /* Disable the default theme :before zoom to avoid double zooming */

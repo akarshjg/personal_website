@@ -7,7 +7,7 @@ showcase:
   enable: true
   title: "Hello, I'm Akarsh."
   subtitle: "Neophile | Audiophile | Bibliophile"
-  description: "As you might have guessed, the domain name was inspired by Alphabet (GOOGL) which colloquially represents everything-> A-Z. I created this website in an effort to have a single site with everything relating to me ;)"
+  description: "Inspired by Alphabet (GOOGL) representing everything from A to Z, this space is my digital canvas. It consolidates my professional journey at the intersection of business, data, and semiconductors with a personal pursuit of records, books, and curiosities."
   image:
     alt: "Showcase keyboard and mouse image"
     x: "img/showcase/showcase.png"
@@ -51,13 +51,13 @@ about:
   enable: true
   title: "Who am I?"
   content: '<p class="lead">
-    I enjoy reading books, listening to music and binging on Netflix shows whenever I am free. I am in pursuit of becoming a productivity grease-monkey and thus I keep trying various things or in other words I am a dilettante😅.
+    I thrive at the intersection of technology and business. Currently, I work as a <strong>Product Marketing Specialist</strong> at a semiconductor company, where I am part of the team handling the RAM portfolio while focusing on pricing strategy.
     </p>
     <p class="lead">
-    I work as Strategic Marketing Specialist at a semiconductor company where my role revolves around providing competitive market intelligence to the business units.
+    Beyond marketing, I am the dedicated "data person" for our business. I have built and automated our Tableau dashboard workflows, and I am currently architecting our data infrastructure to enable machine learning, LLMs, and advanced analytics.
     </p>
     <p class="lead">
-    You can talk to me about productivity workflows, Data Science, Data Engineering Marketing, Pricing and Strategy. I dabble with Guitar sometimes and I go for runs every now and then.
+    Off-duty, I am an avid reader and a vinyl enthusiast, often spinning records on my turntable while searching for the next high-fidelity addition to my music collection. I also love tweaking my productivity setup, running to clear my head, and experimenting with the guitar.
     </p>'
   button:
     icon: "icon-smile-fill"
@@ -91,7 +91,7 @@ education:
 experience:
   enable: true
   title: "Experience"
-  description: "I have over seven years of experience working at a Semiconductor company. After testing waters with technology related roles, technical research role and marketing roles during the internships, I realized that the confluence of applied technology and business resonated with me and thus I began my professional journey in Marketing at a hi-tech company."
+  description: "I have over eight years of experience working in the semiconductor industry, specializing in the confluence of product marketing, pricing strategy, and data engineering. Currently, I work on RAM portfolios and data architecture, automating workflows and building scalable data systems to support machine learning and generative AI integrations."
   button:
     icon: "icon-linkedin-fill"
     btnText: "Linkedin"
@@ -102,9 +102,14 @@ experience:
     URL: "https://drive.google.com/file/d/1TkkDcLjxTYObTW1Bn-B5eQ-UGr99UVR4/view?usp=sharing"
 
   items:
+    - title: "Product Marketing Specialist"
+      company: "Infineon Technologies Memory Solutions"
+      duration: "Sept 2023 - Present"
+      website: "https://www.infineon.com/"
+
     - title: "Strategic Marketing Specialist"
       company: "Infineon Technologies(Cypress Semiconductor)"
-      duration: "Apr 2019 - Present"
+      duration: "Apr 2019 - Sept 2023"
       website: "https://www.infineon.com/"
 
     - title: "Pricing Marketing Engineer"
