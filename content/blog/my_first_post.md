@@ -30,7 +30,7 @@ My most recent role was in product marketing within a memory solutions team. I s
 
 ## Passions and Pursuits Beyond Work
 
-Outside of my professional life, I have a range of interests and hobbies. Running is a significant one; I used to run regularly and am more inclined to run in cooler weather. It's been a recurring activity. I've completed several long-distance races in various locations. My longest run to date is a significant distance. Running represents perseverance and pushing personal limits. I aim to improve my running pace. I recently considered restarting running.
+Outside of my professional life, I have a range of interests and hobbies. Running is a significant one — I used to run regularly and find I perform best in cooler weather. I've completed several long-distance races across different cities, and my longest run to date is a 20-miler (32 km). Running, for me, is as much a mental exercise as a physical one — it's where I do some of my clearest thinking. I keep meaning to get back to it more seriously.
 
 I enjoy playing basketball, starting during my school years and continuing afterwards. My physical stature is advantageous. I participated in school and college events, playing regularly.
 
@@ -38,11 +38,11 @@ I enjoy listening to podcasts — two that are always in my rotation are [Are Yo
 
 Quizzing is another passion that began early. I experienced initial success in school, which was recognized by teachers and peers. My strengths lie in Science, Business, and Technology. I participated in quizzes at various levels and won accolades.
 
-I follow a major motorsport, having been involved in a student technical team related to it. I have been actively following it since a specific year.
+I'm a devoted Formula 1 fan — I've been following the sport closely since 2014 and haven't missed a season since. My interest in F1 goes beyond watching races; during college, I was part of our SAE Formula Student team, which gave me an appreciation for the engineering complexity behind motorsport. The strategy, the engineering, the personalities — it's endlessly fascinating.
 
-I enjoy listening to music; it provides a sense of tranquility. I believe the appreciation of music can be influenced by mood, although some songs are universally uplifting. I've had moments where familiar songs gain new significance. I am also interested in high-quality audio equipment.
+Music is a constant companion in my daily life. I find it provides a sense of flow and calm, especially during deep work. I have a growing vinyl collection and genuinely love the ritual of putting a record on the turntable — there's something irreplaceable about the warmth of analogue sound. I'm also a bit of an audiophile, always on the lookout for the next addition to my hi-fi setup.
 
-I am interested in exploring tools for workflow optimization and automation through templates. I appreciate using to-do lists and exploring productivity concepts.
+I'm also a productivity nerd at heart — I love exploring systems for getting things done, from Notion templates to keyboard-shortcut-heavy workflows. If there's a way to automate something, I will probably try to build it.
 
 ## In Closing
 
