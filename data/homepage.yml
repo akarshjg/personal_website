@@ -10,8 +10,8 @@ showcase:
   description: "Inspired by Alphabet (GOOGL) representing everything from A to Z, this space is my digital canvas. It consolidates my professional journey at the intersection of business, data, and semiconductors with a personal pursuit of records, books, and curiosities."
   image:
     alt: "Showcase keyboard and mouse image"
-    x: "img/showcase/showcase.png"
-    _2x: "img/showcase/showcase@2x.png"
+    x: "img/showcase_book/book.jpg"
+    _2x: "img/showcase_book/book@2x.jpg"
   imageMobile:
     alt: "Showcase keyboard and mouse image"
     x: "img/showcase/showcase-mobile.jpg"
@@ -64,8 +64,8 @@ about:
     btnText: "About Me"
     URL: "https://drive.google.com/file/d/1TkkDcLjxTYObTW1Bn-B5eQ-UGr99UVR4/view?usp=sharing"
   image:
-    x: "img/who-am-i/user-picture.png"
-    _2x: "img/who-am-i/user-picture@2x.png"
+    x: "img/who-am-i/user-picture.jpg"
+    _2x: "img/who-am-i/user-picture@2x.jpg"
 
 # education
 education:

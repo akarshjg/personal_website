@@ -476,3 +476,59 @@ h2.book-category a.book-category-anchor:hover .icon {
     line-height: 1.5;
 }
 
+/* Ensure Webfonts render immediately with fallback system fonts (Zero FOIT) */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/inter/Inter-Light.woff2") format("woff2"),
+       url("../fonts/inter/Inter-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/inter/Inter-Regular.woff2") format("woff2"),
+       url("../fonts/inter/Inter-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/inter/Inter-Medium.woff2") format("woff2"),
+       url("../fonts/inter/Inter-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/inter/Inter-SemiBold.woff2") format("woff2"),
+       url("../fonts/inter/Inter-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/inter/Inter-Bold.woff2") format("woff2"),
+       url("../fonts/inter/Inter-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'AutumnMoon';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/autumn-moon/AutumnMoon.woff2") format("woff2"),
+       url("../fonts/autumn-moon/AutumnMoon.woff") format("woff");
+}
+
+

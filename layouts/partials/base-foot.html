@@ -1,0 +1,59 @@
+<script defer src='{{ "js/rad-animations.js" | absURL }}'></script>
+<script defer src='{{ "js/library/lozad.min.js" | absURL }}'></script>
+<script>
+  window.addEventListener("DOMContentLoaded", function() {
+    if (window.lozad) {
+      var observer = window.lozad(".lozad", {
+        rootMargin: window.innerHeight / 2 + "px 0px",
+        threshold: 0.01
+      });
+      observer.observe();
+    }
+  });
+</script>
+<script defer src='{{ "js/library/jquery-3.3.1.slim.min.js" | absURL }}'></script>
+<script defer src='{{ "js/library/bootstrap.min.js" | absURL }}'></script>
+<script defer src='{{ "js/sticky-header.js" | absURL }}'></script>
+<script defer src='{{ "js/library/smooth-scroll.polyfills.min.js" | absURL }}'></script>
+<script defer src='{{ "js/library/fontfaceobserver.js" | absURL }}'></script>
+<script>
+  (function(w) {
+    if (w.document.documentElement.className.indexOf("fonts-loaded") > -1) {
+      return;
+    }
+    // Fast-path: use native document.fonts if available
+    if (w.document.fonts && w.document.fonts.ready) {
+      w.document.fonts.ready.then(function() {
+        w.document.documentElement.className += " fonts-loaded";
+      });
+      return;
+    }
+    // Fallback font observer with fast timeout
+    if (w.FontFaceObserver) {
+      var fontA = new w.FontFaceObserver("Inter", { weight: 400 });
+      var fontB = new w.FontFaceObserver("Inter", { weight: 700 });
+      w.Promise.all([fontA.load(null, 1500), fontB.load(null, 1500)]).then(function() {
+        w.document.documentElement.className += " fonts-loaded";
+      }).catch(function() {
+        w.document.documentElement.className += " fonts-loaded";
+      });
+    } else {
+      w.document.documentElement.className += " fonts-loaded";
+    }
+  })(this);
+</script>
+<script>
+  window.addEventListener("DOMContentLoaded", function() {
+    if (typeof SmoothScroll !== 'undefined') {
+      new SmoothScroll('a[href*="#"]');
+    }
+    if (window.$) {
+      $('a.nav-link').on('click', function() {
+        var navbar = $('.navbar-collapse');
+        if (navbar && navbar.hasClass('show')) {
+          $('.navbar-toggler').click();
+        }
+      });
+    }
+  });
+</script>

@@ -1,1 +1,11 @@
-<!-- Custom head code can be injected here -->
+<!-- Preconnect to critical external origins -->
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+<link rel="preconnect" href="https://cdn.segment.com" crossorigin>
+<link rel="dns-prefetch" href="https://www.instagram.com">
+<link rel="dns-prefetch" href="https://open.spotify.com">
+
+<!-- Preload critical webfonts for fast text render -->
+<link rel="preload" href="{{ "fonts/inter/Inter-Regular.woff2" | absURL }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ "fonts/inter/Inter-Medium.woff2" | absURL }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ "fonts/inter/Inter-Bold.woff2" | absURL }}" as="font" type="font/woff2" crossorigin>
