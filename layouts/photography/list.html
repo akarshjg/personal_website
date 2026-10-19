@@ -8,6 +8,55 @@
 
     {{ partial "head_custom.html" . }}
 
+    <style>
+      .embed-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 24px;
+        padding: 0 0 60px;
+      }
+
+      .embed-item {
+        background: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .embed-item:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 30px rgba(0,0,0,0.14);
+      }
+
+      .embed-item iframe,
+      .embed-item blockquote {
+        width: 100% !important;
+        min-width: unset !important;
+        margin: 0 !important;
+      }
+
+      /* Loading skeleton */
+      .embed-skeleton {
+        background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+        background-size: 200% 100%;
+        animation: shimmer 1.5s infinite;
+        height: 400px;
+        border-radius: 12px;
+      }
+
+      @keyframes shimmer {
+        0% { background-position: 200% 0; }
+        100% { background-position: -200% 0; }
+      }
+
+      @media (max-width: 768px) {
+        .embed-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+
 </head>
 
 <body>
@@ -22,32 +71,36 @@
             <p class="lead">
               A collection of moments captured behind the lens.
               <br/>
-              Synced automatically from my Instagram handle <a href="https://www.instagram.com/aio.wiz/" target="_blank" rel="noopener noreferrer" style="color: #e93e34; font-weight: 600;">@aio.wiz</a>.
+              Follow me on Instagram at <a href="https://www.instagram.com/aio.wiz/" target="_blank" rel="noopener noreferrer" style="color: #e93e34; font-weight: 600;">@aio.wiz</a>.
             </p>
           </div>
         </div>
 
         {{ $photography := site.Data.photography }}
         {{ if $photography }}
-        <div class="gallery-grid rad-fade-down">
+        <div class="embed-grid rad-fade-down">
           {{ range $photography }}
-          <div class="gallery-item" onclick="openLightbox(this)" style="cursor: zoom-in;">
-            <img class="gallery-img lozad" 
-                 src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
-                 data-src="{{ .mediaUrl }}" 
-                 alt="{{ .caption | default "Instagram Photography" }}" 
-                 style="width: 100%; height: auto; display: block; border-radius: 12px; transition: transform 0.3s ease;">
-            <div class="gallery-overlay">
-              <div class="gallery-caption">{{ .caption | default "Captured moment" }}</div>
-              <div class="gallery-meta">
-                <a href="{{ .permalink }}" target="_blank" rel="noopener noreferrer" class="instagram-link" onclick="event.stopPropagation();">
+          <div class="embed-item">
+            <blockquote
+              class="instagram-media"
+              data-instgrm-permalink="https://www.instagram.com/p/{{ .shortcode }}/?utm_source=ig_embed"
+              data-instgrm-version="14"
+              style="background:#FFF; border:0; border-radius:12px; box-shadow:none; margin:0; max-width:100%; min-width:0; padding:0; width:100%;">
+              <!-- Loading placeholder shown before Instagram script runs -->
+              <div style="padding:16px;">
+                <a href="https://www.instagram.com/p/{{ .shortcode }}/" target="_blank" rel="noopener noreferrer"
+                   style="display:block; text-align:center; color:#e93e34; font-weight:600; text-decoration:none; padding:40px 0;">
                   View on Instagram ↗
                 </a>
               </div>
-            </div>
+            </blockquote>
           </div>
           {{ end }}
         </div>
+
+        <!-- Instagram oEmbed script: loads all embeds on the page -->
+        <script async src="//www.instagram.com/embed.js"></script>
+
         {{ else }}
         <div class="row text-center pt-5">
           <div class="col-12 text-muted">
@@ -57,45 +110,6 @@
         {{ end }}
       </div>
     </section>
-
-    <!-- Lightbox Modal -->
-    <div id="lightbox-modal" class="lightbox-modal" onclick="closeLightbox()">
-      <span class="lightbox-close">&times;</span>
-      <img class="lightbox-content" id="lightbox-img" alt="Enlarged photography view">
-      <div id="lightbox-caption" class="lightbox-caption"></div>
-    </div>
-
-    <script>
-      function openLightbox(element) {
-        var modal = document.getElementById("lightbox-modal");
-        var img = document.getElementById("lightbox-img");
-        var caption = document.getElementById("lightbox-caption");
-        var clickedImg = element.querySelector(".gallery-img");
-        
-        img.src = clickedImg.getAttribute('data-src') || clickedImg.src;
-        caption.innerHTML = clickedImg.alt;
-        
-        modal.style.display = "flex";
-        setTimeout(function() {
-          modal.classList.add("show");
-        }, 10);
-      }
-
-      function closeLightbox() {
-        var modal = document.getElementById("lightbox-modal");
-        modal.classList.remove("show");
-        setTimeout(function() {
-          modal.style.display = "none";
-        }, 300);
-      }
-
-      // Close modal on escape key
-      document.addEventListener('keydown', function(event) {
-        if (event.key === 'Escape') {
-          closeLightbox();
-        }
-      });
-    </script>
 
 	{{ partial "footer.html" . }}
     {{ partial "base-foot.html" . }}

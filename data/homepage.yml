@@ -29,7 +29,7 @@ showcase:
       URL: "https://github.com/akarshjg"
 
     - icon: "twitter"
-      URL: "https://twitter.com/akarshgalagali"
+      URL: "https://x.com/akarshgalagali"
 
     - icon: "instagram"
       URL: "https://www.instagram.com/akarsh.galagali/"
@@ -235,7 +235,7 @@ contact:
   title: "Contact"
   form:
     method: "POST"
-    action: "#"
+    action: "/contact-success"
     full_name: "Full Name"
     email: "Email Address"
     message: "Type Your Message Here"
