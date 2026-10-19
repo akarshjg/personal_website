@@ -39,8 +39,10 @@
 
 <link rel="icon" href="{{ "favicon.ico" | absURL }}" type="image/x-icon"/>
 
+{{ if .Site.Data.homepage.showcase.image.x }}
 <!-- Preload LCP hero image so browser fetches it immediately -->
-<link rel="preload" as="image" href="{{ "img/showcase_book/book.jpg" | absURL }}" fetchpriority="high">
+<link rel="preload" as="image" href="{{ .Site.Data.homepage.showcase.image.x | relURL }}" fetchpriority="high">
+{{ end }}
 
 <!-- Fast-path font-readiness detection -->
 <script>

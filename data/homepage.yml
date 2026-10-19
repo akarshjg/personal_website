@@ -9,12 +9,12 @@ showcase:
   subtitle: "Neophile | Audiophile | Bibliophile"
   description: "Inspired by Alphabet (GOOGL) representing everything from A to Z, this space is my digital canvas. It consolidates my professional journey at the intersection of business, data, and semiconductors with a personal pursuit of records, books, and curiosities."
   image:
-    alt: "Showcase keyboard and mouse image"
-    x: "img/showcase_book/book.jpg"
-    _2x: "img/showcase_book/book@2x.jpg"
+    alt: "Akarsh Galagali - Neophile, Audiophile, Bibliophile"
+    x: "img/showcase/interests.jpg"
+    _2x: "img/showcase/interests@2x.jpg"
   imageMobile:
-    alt: "Showcase keyboard and mouse image"
-    x: "img/showcase/showcase-mobile.jpg"
+    alt: "Akarsh Galagali - Neophile, Audiophile, Bibliophile"
+    x: "img/showcase/interests-mobile.jpg"
 
   button:
     icon: "icon-mail-fill"

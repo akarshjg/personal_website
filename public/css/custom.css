@@ -531,4 +531,105 @@ h2.book-category a.book-category-anchor:hover .icon {
        url("../fonts/autumn-moon/AutumnMoon.woff") format("woff");
 }
 
+/* ==========================================================================
+   Showcase Hero & About Section Alignment (Prevent Overlap)
+   ========================================================================== */
+.rad-showcase {
+    overflow: hidden !important;
+    position: relative !important;
+    margin-bottom: 0 !important;
+}
+
+@media (min-width: 992px) {
+    .rad-showcase {
+        min-height: 800px !important;
+        display: flex !important;
+        align-items: center !important;
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
+}
+
+.rad-showcase__bg {
+    right: 2% !important;
+    left: auto !important;
+    max-height: 100% !important;
+    overflow: hidden !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    pointer-events: none !important;
+}
+
+@media (min-width: 992px) {
+    .rad-showcase__bg {
+        display: flex !important;
+        width: 48% !important;
+        height: auto !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+        bottom: auto !important;
+    }
+
+    .rad-showcase__bg img {
+        margin-top: 0 !important;
+        max-height: 500px !important;
+        max-width: 100% !important;
+        width: auto !important;
+        height: auto !important;
+        object-fit: contain !important;
+        object-position: center right !important;
+        filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.08));
+    }
+}
+
+@media (max-width: 991px) {
+    .rad-showcase__bg {
+        display: none !important;
+    }
+
+    .rad-showcase__bg--mobile {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100% !important;
+        padding: 24px 15px !important;
+    }
+
+    .rad-showcase__bg--mobile img {
+        max-width: 85% !important;
+        max-height: 360px !important;
+        height: auto !important;
+        margin: 0 auto !important;
+        object-fit: contain !important;
+        filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.08));
+    }
+}
+
+/* Eliminate theme negative margin that pulled #about over the hero image */
+.rad-showcase + section {
+    margin-top: 0 !important;
+}
+
+@media (min-width: 1200px) {
+    .rad-showcase + section {
+        margin-top: 0 !important;
+    }
+}
+
+/* Ensure #about is cleanly separated with generous padding and anchor room */
+#about {
+    position: relative !important;
+    z-index: 5 !important;
+    background-color: #ffffff !important;
+    padding-top: 100px !important;
+    padding-bottom: 80px !important;
+    scroll-margin-top: 100px !important;
+}
+
+#contact {
+    scroll-margin-top: 100px !important;
+}
+
+
 

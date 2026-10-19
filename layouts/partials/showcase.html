@@ -3,8 +3,8 @@
   <div class="rad-showcase__bg">
     <img
       class="img-responsive"
-      src="{{ .Site.Data.homepage.showcase.image.x | absURL }}"
-      srcset="{{ .Site.Data.homepage.showcase.image.x | absURL }} 1x, {{ .Site.Data.homepage.showcase.image._2x | absURL }} 2x"
+      src="{{ .Site.Data.homepage.showcase.image.x | relURL }}"
+      srcset="{{ .Site.Data.homepage.showcase.image.x | relURL }} 1x, {{ .Site.Data.homepage.showcase.image._2x | relURL }} 2x"
       alt="{{ .Site.Data.homepage.showcase.image.alt }}"
       fetchpriority="high"
       loading="eager"
@@ -58,7 +58,7 @@
   <div class="rad-showcase__bg rad-showcase__bg--mobile">
     <img
       class="img-responsive"
-      src="{{ .Site.Data.homepage.showcase.imageMobile.x | absURL }}"
+      src="{{ .Site.Data.homepage.showcase.imageMobile.x | relURL }}"
       alt="{{ .Site.Data.homepage.showcase.imageMobile.alt }}"
       fetchpriority="high"
       loading="eager"
