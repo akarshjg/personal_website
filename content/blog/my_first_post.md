@@ -34,7 +34,7 @@ Outside of my professional life, I have a range of interests and hobbies. Runnin
 
 I enjoy playing basketball, starting during my school years and continuing afterwards. My physical stature is advantageous. I participated in school and college events, playing regularly.
 
-I enjoy listening to podcasts, specifically mentioning "Podcast A" and "Podcast B".
+I enjoy listening to podcasts — two that are always in my rotation are [Are You Quizzing Me](https://open.spotify.com/show/4kfAlhbqbGFeMtDjMxgSNI), a fun and fiercely competitive quiz show, and [Empire](https://open.spotify.com/show/5RdShpOtxKO3ZWohR2OeZ7) by Anita Anand and William Dalrymple, a sweeping historical podcast on the rise and fall of the British Empire.
 
 Quizzing is another passion that began early. I experienced initial success in school, which was recognized by teachers and peers. My strengths lie in Science, Business, and Technology. I participated in quizzes at various levels and won accolades.
 
